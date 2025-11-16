@@ -1,0 +1,22 @@
+{
+  "name": "erd-viewer-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CodeMatrix Viewer - Code Visualization Tool",
+  "scripts": {
+    "install": "npm install --prefix packages/code-matrix-visualizer && npm install --prefix app",
+    "dev": "npm run build:package && npm run dev:app",
+    "build:package": "cd packages/code-matrix-visualizer && npm run build",
+    "dev:app": "cd app && npm run dev",
+    "build": "npm run build:package && cd app && npm run build",
+    "preview": "cd app && npm run preview"
+  },
+  "keywords": [
+    "erd",
+    "visualization",
+    "diagram",
+    "code-analysis"
+  ],
+  "author": "",
+  "license": "MIT"
+}
