@@ -1,0 +1,3778 @@
+{
+  "nodes": [
+    {
+      "id": "crate::users_info",
+      "type": "crate",
+      "name": "crate users_info",
+      "description": "Crate crate users_info",
+      "public": true,
+      "details": {}
+    },
+    {
+      "id": "crate::users_info|class_struct::DomainError|method::database_implInto<String>",
+      "type": "method",
+      "name": "database",
+      "description": "Method database",
+      "public": true,
+      "filename": "src/domain/error.rs",
+      "start_line": 50,
+      "end_line": 54,
+      "container": "impl DomainError",
+      "source_code": "impl DomainError {\n    // ... skipped code ...\n    pub fn database(message: impl Into<String>) -> Self {\n        Self::Database {\n            message: message.into(),\n        }\n    }\n    // ... skipped code ...\n}\n",
+      "details": {
+        "input_params": [
+          {
+            "name": "message",
+            "type": "impl Into<String>"
+          }
+        ],
+        "return_values": [
+          "Self"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::DomainError|method::display_name_too_long_usize_usize",
+      "type": "method",
+      "name": "display_name_too_long",
+      "description": "Method display_name_too_long",
+      "public": true,
+      "filename": "src/domain/error.rs",
+      "start_line": 46,
+      "end_line": 48,
+      "container": "impl DomainError",
+      "source_code": "impl DomainError {\n    // ... skipped code ...\n    pub fn display_name_too_long(len: usize, max: usize) -> Self {\n        Self::DisplayNameTooLong { len, max }\n    }\n    // ... skipped code ...\n}\n",
+      "details": {
+        "input_params": [
+          {
+            "name": "len",
+            "type": "usize"
+          },
+          {
+            "name": "max",
+            "type": "usize"
+          }
+        ],
+        "return_values": [
+          "Self"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::DomainError|method::email_already_exists_String",
+      "type": "method",
+      "name": "email_already_exists",
+      "description": "Method email_already_exists",
+      "public": true,
+      "filename": "src/domain/error.rs",
+      "start_line": 34,
+      "end_line": 36,
+      "container": "impl DomainError",
+      "source_code": "impl DomainError {\n    // ... skipped code ...\n    pub fn email_already_exists(email: String) -> Self {\n        Self::EmailAlreadyExists { email }\n    }\n    // ... skipped code ...\n}\n",
+      "details": {
+        "input_params": [
+          {
+            "name": "email",
+            "type": "String"
+          }
+        ],
+        "return_values": [
+          "Self"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::DomainError|method::empty_display_name",
+      "type": "method",
+      "name": "empty_display_name",
+      "description": "Method empty_display_name",
+      "public": true,
+      "filename": "src/domain/error.rs",
+      "start_line": 42,
+      "end_line": 44,
+      "container": "impl DomainError",
+      "source_code": "impl DomainError {\n    // ... skipped code ...\n    pub fn empty_display_name() -> Self {\n        Self::EmptyDisplayName\n    }\n    // ... skipped code ...\n}\n",
+      "details": {
+        "input_params": [],
+        "return_values": [
+          "Self"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::DomainError|method::invalid_email_String",
+      "type": "method",
+      "name": "invalid_email",
+      "description": "Method invalid_email",
+      "public": true,
+      "filename": "src/domain/error.rs",
+      "start_line": 38,
+      "end_line": 40,
+      "container": "impl DomainError",
+      "source_code": "impl DomainError {\n    // ... skipped code ...\n    pub fn invalid_email(email: String) -> Self {\n        Self::InvalidEmail { email }\n    }\n    // ... skipped code ...\n}\n",
+      "details": {
+        "input_params": [
+          {
+            "name": "email",
+            "type": "String"
+          }
+        ],
+        "return_values": [
+          "Self"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::DomainError|method::user_not_found_Uuid",
+      "type": "method",
+      "name": "user_not_found",
+      "description": "Method user_not_found",
+      "public": true,
+      "filename": "src/domain/error.rs",
+      "start_line": 30,
+      "end_line": 32,
+      "container": "impl DomainError",
+      "source_code": "use uuid::Uuid;\n\nimpl DomainError {\n    pub fn user_not_found(id: Uuid) -> Self {\n        Self::UserNotFound { id }\n    }\n    // ... skipped code ...\n}\n",
+      "details": {
+        "input_params": [
+          {
+            "name": "id",
+            "type": "Uuid"
+          }
+        ],
+        "return_values": [
+          "Self"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::DomainError|method::validation_implInto<String>_implInto<String>",
+      "type": "method",
+      "name": "validation",
+      "description": "Method validation",
+      "public": true,
+      "filename": "src/domain/error.rs",
+      "start_line": 56,
+      "end_line": 61,
+      "container": "impl DomainError",
+      "source_code": "impl DomainError {\n    // ... skipped code ...\n    pub fn validation(field: impl Into<String>, message: impl Into<String>) -> Self {\n        Self::Validation {\n            field: field.into(),\n            message: message.into(),\n        }\n    }\n}\n",
+      "details": {
+        "input_params": [
+          {
+            "name": "field",
+            "type": "impl Into<String>"
+          },
+          {
+            "name": "message",
+            "type": "impl Into<String>"
+          }
+        ],
+        "return_values": [
+          "Self"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::HttpAuditClient",
+      "type": "class_struct",
+      "name": "HttpAuditClient",
+      "description": "Class HttpAuditClient",
+      "public": true,
+      "filename": "src/infra/audit/http_audit_client.rs",
+      "start_line": 15,
+      "end_line": 19,
+      "container": "src/infra/audit/http_audit_client.rs",
+      "source_code": "use anyhow::Context;\nuse async_trait::async_trait;\nuse tracing::instrument;\nuse url::Url;\nuse uuid::Uuid;\n\nuse crate::domain::error::DomainError;\nuse crate::domain::ports::AuditPort;\nuse modkit::TracedClient;\n\n/// Single HTTP adapter implementing the AuditPort.\n/// Holds two base URLs:\n///  - audit_base (e.g., http://audit.local)\n///  - notify_base (e.g., http://notifications.local)\npub struct HttpAuditClient {\n    client: TracedClient,\n    audit_base: Url,\n    notify_base: Url,\n}",
+      "details": {
+        "attributes": [
+          {
+            "name": "client",
+            "type": "TracedClient"
+          },
+          {
+            "name": "audit_base",
+            "type": "Url"
+          },
+          {
+            "name": "notify_base",
+            "type": "Url"
+          }
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::HttpAuditClient|method::get_user_access_Self_Uuid",
+      "type": "method",
+      "name": "get_user_access",
+      "description": "Method get_user_access",
+      "public": true,
+      "filename": "src/infra/audit/http_audit_client.rs",
+      "start_line": 38,
+      "end_line": 60,
+      "container": "impl AuditPort for HttpAuditClient",
+      "source_code": "use uuid::Uuid;\n\nimpl AuditPort for HttpAuditClient {\n    // ... skipped code ...\n    async fn get_user_access(&self, id: Uuid) -> Result<(), DomainError> {\n        let mut url = self.audit_base.clone();\n        url.path_segments_mut()\n            .map_err(|_| DomainError::validation(\"user_access\", \"invalid audit base URL\"))?\n            .extend(&[\"api\", \"user-access\", &id.to_string()]);\n\n        let response = self\n            .client\n            .get(url.as_str())\n            .await\n            .with_context(|| format!(\"GET /api/user-access/{}\", id))\n            .map_err(|e| DomainError::validation(\"user_access\", e.to_string()))?;\n\n        // Check HTTP status\n        if !response.status().is_success() {\n            return Err(DomainError::validation(\n                \"user_access\",\n                format!(\"HTTP {}\", response.status()),\n            ));\n        }\n\n        Ok(())\n    }\n    // ... skipped code ...\n}\n",
+      "details": {
+        "input_params": [
+          {
+            "name": "self",
+            "type": "Self"
+          },
+          {
+            "name": "id",
+            "type": "Uuid"
+          }
+        ],
+        "return_values": [
+          "Result<(), DomainError>"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::HttpAuditClient|method::new_TracedClient_Url_Url",
+      "type": "method",
+      "name": "new",
+      "description": "Method new",
+      "public": true,
+      "filename": "src/infra/audit/http_audit_client.rs",
+      "start_line": 22,
+      "end_line": 28,
+      "container": "impl HttpAuditClient",
+      "source_code": "use url::Url;\nuse modkit::TracedClient;\n\nimpl HttpAuditClient {\n    pub fn new(client: TracedClient, audit_base: Url, notify_base: Url) -> Self {\n        Self {\n            client,\n            audit_base,\n            notify_base,\n        }\n    }\n}\n",
+      "details": {
+        "input_params": [
+          {
+            "name": "client",
+            "type": "TracedClient"
+          },
+          {
+            "name": "audit_base",
+            "type": "Url"
+          },
+          {
+            "name": "notify_base",
+            "type": "Url"
+          }
+        ],
+        "return_values": [
+          "Self"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::HttpAuditClient|method::notify_user_created_Self",
+      "type": "method",
+      "name": "notify_user_created",
+      "description": "Method notify_user_created",
+      "public": true,
+      "filename": "src/infra/audit/http_audit_client.rs",
+      "start_line": 67,
+      "end_line": 91,
+      "container": "impl AuditPort for HttpAuditClient",
+      "source_code": "impl AuditPort for HttpAuditClient {\n    // ... skipped code ...\n    async fn notify_user_created(&self) -> Result<(), DomainError> {\n        let mut url = self.notify_base.clone();\n        url.path_segments_mut()\n            .map_err(|_| {\n                DomainError::validation(\"notifications\", \"invalid notifications base URL\")\n            })?\n            .extend(&[\"api\", \"user-created\"]);\n\n        let response = self\n            .client\n            .post(url.as_str())\n            .await\n            .with_context(|| \"POST /api/user-created\")\n            .map_err(|e| DomainError::validation(\"notifications\", e.to_string()))?;\n\n        // Check HTTP status\n        if !response.status().is_success() {\n            return Err(DomainError::validation(\n                \"notifications\",\n                format!(\"HTTP {}\", response.status()),\n            ));\n        }\n\n        Ok(())\n    }\n}\n",
+      "details": {
+        "input_params": [
+          {
+            "name": "self",
+            "type": "Self"
+          }
+        ],
+        "return_values": [
+          "Result<(), DomainError>"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::Migration",
+      "type": "class_struct",
+      "name": "Migration",
+      "description": "Class Migration",
+      "public": true,
+      "filename": "src/infra/storage/migrations/initial_001.rs",
+      "start_line": 4,
+      "end_line": 4,
+      "container": "src/infra/storage/migrations/initial_001.rs",
+      "source_code": "#[derive(DeriveMigrationName)]\npub struct Migration;",
+      "details": {
+        "attributes": []
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::Migration|method::down_Self_ref_SchemaManager",
+      "type": "method",
+      "name": "down",
+      "description": "Method down",
+      "public": true,
+      "filename": "src/infra/storage/migrations/initial_001.rs",
+      "start_line": 52,
+      "end_line": 56,
+      "container": "impl MigrationTrait for Migration",
+      "source_code": "impl MigrationTrait for Migration {\n    // ... skipped code ...\n    async fn down(&self, manager: &SchemaManager) -> Result<(), DbErr> {\n        manager\n            .drop_table(Table::drop().table(Users::Table).to_owned())\n            .await\n    }\n}\n",
+      "details": {
+        "input_params": [
+          {
+            "name": "self",
+            "type": "Self"
+          },
+          {
+            "name": "manager",
+            "type": "&SchemaManager"
+          }
+        ],
+        "return_values": [
+          "Result<(), DbErr>"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::Migration|method::up_Self_ref_SchemaManager",
+      "type": "method",
+      "name": "up",
+      "description": "Method up",
+      "public": true,
+      "filename": "src/infra/storage/migrations/initial_001.rs",
+      "start_line": 8,
+      "end_line": 50,
+      "container": "impl MigrationTrait for Migration",
+      "source_code": "impl MigrationTrait for Migration {\n    async fn up(&self, manager: &SchemaManager) -> Result<(), DbErr> {\n        manager\n            .create_table(\n                Table::create()\n                    .table(Users::Table)\n                    .if_not_exists()\n                    .col(ColumnDef::new(Users::Id).uuid().not_null().primary_key())\n                    .col(\n                        ColumnDef::new(Users::Email)\n                            .string()\n                            .not_null()\n                            .unique_key(),\n                    )\n                    .col(ColumnDef::new(Users::DisplayName).string().not_null())\n                    .col(\n                        ColumnDef::new(Users::CreatedAt)\n                            .timestamp_with_time_zone()\n                            .not_null(),\n                    )\n                    .col(\n                        ColumnDef::new(Users::UpdatedAt)\n                            .timestamp_with_time_zone()\n                            .not_null(),\n                    )\n                    .to_owned(),\n            )\n            .await?;\n\n        // Add unique index on email for better performance\n        manager\n            .create_index(\n                Index::create()\n                    .if_not_exists()\n                    .name(\"idx_users_email\")\n                    .table(Users::Table)\n                    .col(Users::Email)\n                    .unique()\n                    .to_owned(),\n            )\n            .await?;\n\n        Ok(())\n    }\n    // ... skipped code ...\n}\n",
+      "details": {
+        "input_params": [
+          {
+            "name": "self",
+            "type": "Self"
+          },
+          {
+            "name": "manager",
+            "type": "&SchemaManager"
+          }
+        ],
+        "return_values": [
+          "Result<(), DbErr>"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::Migrator",
+      "type": "class_struct",
+      "name": "Migrator",
+      "description": "Class Migrator",
+      "public": true,
+      "filename": "src/infra/storage/migrations/mod.rs",
+      "start_line": 6,
+      "end_line": 6,
+      "container": "src/infra/storage/migrations/mod.rs",
+      "source_code": "pub struct Migrator;",
+      "details": {
+        "attributes": []
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::Migrator|method::migrations",
+      "type": "method",
+      "name": "migrations",
+      "description": "Method migrations",
+      "public": true,
+      "filename": "src/infra/storage/migrations/mod.rs",
+      "start_line": 10,
+      "end_line": 15,
+      "container": "impl MigratorTrait for Migrator",
+      "source_code": "impl MigratorTrait for Migrator {\n    fn migrations() -> Vec<Box<dyn MigrationTrait>> {\n        vec![\n            Box::new(initial_001::Migration),\n            Box::new(add_tenant_support_002::Migration),\n        ]\n    }\n}\n",
+      "details": {
+        "input_params": [],
+        "return_values": [
+          "Vec<Box<dyn MigrationTrait>>"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::MockAuditPort",
+      "type": "class_struct",
+      "name": "MockAuditPort",
+      "description": "Class MockAuditPort",
+      "public": true,
+      "filename": "tests/support.rs",
+      "start_line": 149,
+      "end_line": 149,
+      "container": "tests/support.rs",
+      "source_code": "/// Mock audit port for tests - always succeeds silently.\n#[derive(Clone)]\npub struct MockAuditPort;",
+      "details": {
+        "attributes": []
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::MockAuditPort|method::get_user_access_Self_Uuid",
+      "type": "method",
+      "name": "get_user_access",
+      "description": "Method get_user_access",
+      "public": true,
+      "filename": "tests/support.rs",
+      "start_line": 153,
+      "end_line": 155,
+      "container": "impl AuditPort for MockAuditPort",
+      "source_code": "use uuid::Uuid;\n\nimpl AuditPort for MockAuditPort {\n    async fn get_user_access(&self, _id: Uuid) -> Result<(), DomainError> {\n        Ok(())\n    }\n    // ... skipped code ...\n}\n",
+      "details": {
+        "input_params": [
+          {
+            "name": "self",
+            "type": "Self"
+          },
+          {
+            "name": "_id",
+            "type": "Uuid"
+          }
+        ],
+        "return_values": [
+          "Result<(), DomainError>"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::MockAuditPort|method::notify_user_created_Self",
+      "type": "method",
+      "name": "notify_user_created",
+      "description": "Method notify_user_created",
+      "public": true,
+      "filename": "tests/support.rs",
+      "start_line": 157,
+      "end_line": 159,
+      "container": "impl AuditPort for MockAuditPort",
+      "source_code": "impl AuditPort for MockAuditPort {\n    // ... skipped code ...\n    async fn notify_user_created(&self) -> Result<(), DomainError> {\n        Ok(())\n    }\n}\n",
+      "details": {
+        "input_params": [
+          {
+            "name": "self",
+            "type": "Self"
+          }
+        ],
+        "return_values": [
+          "Result<(), DomainError>"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::MockEventPublisher",
+      "type": "class_struct",
+      "name": "MockEventPublisher",
+      "description": "Class MockEventPublisher",
+      "public": true,
+      "filename": "tests/support.rs",
+      "start_line": 164,
+      "end_line": 164,
+      "container": "tests/support.rs",
+      "source_code": "/// Mock event publisher for tests - discards all events.\n#[derive(Clone)]\npub struct MockEventPublisher;",
+      "details": {
+        "attributes": []
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::MockEventPublisher|method::publish_Self_ref_UserDomainEvent",
+      "type": "method",
+      "name": "publish",
+      "description": "Method publish",
+      "public": true,
+      "filename": "tests/support.rs",
+      "start_line": 167,
+      "end_line": 169,
+      "container": "impl EventPublisher<UserDomainEvent> for MockEventPublisher",
+      "source_code": "impl EventPublisher<UserDomainEvent> for MockEventPublisher {\n    fn publish(&self, _event: &UserDomainEvent) {\n        // Discard events in tests\n    }\n}\n",
+      "details": {
+        "input_params": [
+          {
+            "name": "self",
+            "type": "Self"
+          },
+          {
+            "name": "_event",
+            "type": "&UserDomainEvent"
+          }
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::NewUser",
+      "type": "class_struct",
+      "name": "NewUser",
+      "description": "Class NewUser",
+      "public": true,
+      "filename": "src/contract/model.rs",
+      "start_line": 16,
+      "end_line": 21,
+      "container": "src/contract/model.rs",
+      "source_code": "/// Data for creating a new user\n#[derive(Debug, Clone, PartialEq, Eq)]\npub struct NewUser {\n    pub id: Option<Uuid>,\n    pub tenant_id: Uuid,\n    pub email: String,\n    pub display_name: String,\n}",
+      "details": {
+        "attributes": [
+          {
+            "name": "id",
+            "type": "Option<Uuid>"
+          },
+          {
+            "name": "tenant_id",
+            "type": "Uuid"
+          },
+          {
+            "name": "email",
+            "type": "String"
+          },
+          {
+            "name": "display_name",
+            "type": "String"
+          }
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::NewUser|method::from_CreateUserReq",
+      "type": "method",
+      "name": "from",
+      "description": "Method from",
+      "public": true,
+      "filename": "src/api/rest/dto.rs",
+      "start_line": 52,
+      "end_line": 59,
+      "container": "impl From<CreateUserReq> for NewUser",
+      "source_code": "impl From<CreateUserReq> for NewUser {\n    fn from(req: CreateUserReq) -> Self {\n        Self {\n            id: req.id,\n            tenant_id: req.tenant_id,\n            email: req.email,\n            display_name: req.display_name,\n        }\n    }\n}\n",
+      "details": {
+        "input_params": [
+          {
+            "name": "req",
+            "type": "CreateUserReq"
+          }
+        ],
+        "return_values": [
+          "Self"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::Problem|method::from_DomainError",
+      "type": "method",
+      "name": "from",
+      "description": "Method from",
+      "public": true,
+      "filename": "src/api/rest/error.rs",
+      "start_line": 53,
+      "end_line": 55,
+      "container": "impl From<DomainError> for Problem",
+      "source_code": "use crate::domain::error::DomainError;\n\nimpl From<DomainError> for Problem {\n    fn from(e: DomainError) -> Self {\n        domain_error_to_problem(e, \"/\")\n    }\n}\n",
+      "details": {
+        "input_params": [
+          {
+            "name": "e",
+            "type": "DomainError"
+          }
+        ],
+        "return_values": [
+          "Self"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::SeaOrmUsersRepository",
+      "type": "class_struct",
+      "name": "SeaOrmUsersRepository",
+      "description": "Class SeaOrmUsersRepository",
+      "public": true,
+      "filename": "src/infra/storage/sea_orm_repo.rs",
+      "start_line": 34,
+      "end_line": 36,
+      "container": "src/infra/storage/sea_orm_repo.rs",
+      "source_code": "/// SeaORM repository implementation with automatic security scoping.\n///\n/// This repository uses `SecureConn` to ensure all database operations\n/// respect the security context provided by the caller. Queries are automatically\n/// filtered based on tenant/resource access rules.\n///\n/// # Security Model\n///\n/// The users table is tenant-scoped via the `tenant_id` column:\n/// - **Tenant isolation**: Users are automatically filtered by tenant_id from the security context\n/// - **Email uniqueness**: Email addresses must be unique within a tenant (not globally)\n/// - **Deny-by-default**: Empty security context denies all access\npub struct SeaOrmUsersRepository {\n    sec: SecureConn,\n}",
+      "details": {
+        "attributes": [
+          {
+            "name": "sec",
+            "type": "SecureConn"
+          }
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::SeaOrmUsersRepository|method::delete_Self_ref_SecurityCtx_Uuid",
+      "type": "method",
+      "name": "delete",
+      "description": "Method delete",
+      "public": true,
+      "filename": "src/infra/storage/sea_orm_repo.rs",
+      "start_line": 186,
+      "end_line": 196,
+      "container": "impl UsersRepository for SeaOrmUsersRepository",
+      "source_code": "use uuid::Uuid;\nuse modkit_db::secure::{SecureConn, SecurityCtx};\n\nimpl UsersRepository for SeaOrmUsersRepository {\n    // ... skipped code ...\n    async fn delete(&self, ctx: &SecurityCtx, id: Uuid) -> anyhow::Result<bool> {\n        debug!(\"Deleting user with security validation\");\n\n        let deleted = self\n            .sec\n            .delete_by_id::<UserEntity>(ctx, id)\n            .await\n            .context(\"Secure delete failed\")?;\n\n        Ok(deleted)\n    }\n    // ... skipped code ...\n}\n",
+      "details": {
+        "input_params": [
+          {
+            "name": "self",
+            "type": "Self"
+          },
+          {
+            "name": "ctx",
+            "type": "&SecurityCtx"
+          },
+          {
+            "name": "id",
+            "type": "Uuid"
+          }
+        ],
+        "return_values": [
+          "anyhow::Result<bool>"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::SeaOrmUsersRepository|method::email_exists_Self_ref_SecurityCtx_ref_str",
+      "type": "method",
+      "name": "email_exists",
+      "description": "Method email_exists",
+      "public": true,
+      "filename": "src/infra/storage/sea_orm_repo.rs",
+      "start_line": 96,
+      "end_line": 113,
+      "container": "impl UsersRepository for SeaOrmUsersRepository",
+      "source_code": "use modkit_db::secure::{SecureConn, SecurityCtx};\n\nimpl UsersRepository for SeaOrmUsersRepository {\n    // ... skipped code ...\n    async fn email_exists(&self, ctx: &SecurityCtx, email: &str) -> anyhow::Result<bool> {\n        debug!(\"Checking if email exists within security scope\");\n\n        use sea_orm::sea_query::Expr;\n        let secure_query = self\n            .sec\n            .find::<UserEntity>(ctx)\n            .context(\"Failed to create secure query\")?\n            .filter(sea_orm::Condition::all().add(Expr::col(Column::Email).eq(email)));\n\n        let count = secure_query\n            .into_inner()\n            .count(self.sec.conn())\n            .await\n            .context(\"email_exists query failed\")?;\n\n        Ok(count > 0)\n    }\n    // ... skipped code ...\n}\n",
+      "details": {
+        "input_params": [
+          {
+            "name": "self",
+            "type": "Self"
+          },
+          {
+            "name": "ctx",
+            "type": "&SecurityCtx"
+          },
+          {
+            "name": "email",
+            "type": "&str"
+          }
+        ],
+        "return_values": [
+          "anyhow::Result<bool>"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::SeaOrmUsersRepository|method::find_by_id_Self_ref_SecurityCtx_Uuid",
+      "type": "method",
+      "name": "find_by_id",
+      "description": "Method find_by_id",
+      "public": true,
+      "filename": "src/infra/storage/sea_orm_repo.rs",
+      "start_line": 73,
+      "end_line": 85,
+      "container": "impl UsersRepository for SeaOrmUsersRepository",
+      "source_code": "use uuid::Uuid;\nuse modkit_db::secure::{SecureConn, SecurityCtx};\n\nimpl UsersRepository for SeaOrmUsersRepository {\n    // ... skipped code ...\n    async fn find_by_id(&self, ctx: &SecurityCtx, id: Uuid) -> anyhow::Result<Option<User>> {\n        debug!(\"Finding user by id with security context\");\n\n        let found = self\n            .sec\n            .find_by_id::<UserEntity>(ctx, id)\n            .context(\"Failed to create secure query\")?\n            .one(self.sec.conn())\n            .await\n            .context(\"find_by_id query failed\")?;\n\n        Ok(found.map(Into::into))\n    }\n    // ... skipped code ...\n}\n",
+      "details": {
+        "input_params": [
+          {
+            "name": "self",
+            "type": "Self"
+          },
+          {
+            "name": "ctx",
+            "type": "&SecurityCtx"
+          },
+          {
+            "name": "id",
+            "type": "Uuid"
+          }
+        ],
+        "return_values": [
+          "anyhow::Result<Option<User>>"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::SeaOrmUsersRepository|method::insert_Self_ref_SecurityCtx_User",
+      "type": "method",
+      "name": "insert",
+      "description": "Method insert",
+      "public": true,
+      "filename": "src/infra/storage/sea_orm_repo.rs",
+      "start_line": 125,
+      "end_line": 144,
+      "container": "impl UsersRepository for SeaOrmUsersRepository",
+      "source_code": "use crate::contract::User;\nuse modkit_db::secure::{SecureConn, SecurityCtx};\n\nimpl UsersRepository for SeaOrmUsersRepository {\n    // ... skipped code ...\n    async fn insert(&self, ctx: &SecurityCtx, u: User) -> anyhow::Result<()> {\n        debug!(\"Inserting new user with security validation\");\n\n        let m = UserAM {\n            id: Set(u.id),\n            tenant_id: Set(u.tenant_id),\n            email: Set(u.email),\n            display_name: Set(u.display_name),\n            created_at: Set(u.created_at),\n            updated_at: Set(u.updated_at),\n        };\n\n        let _ = self\n            .sec\n            .insert::<UserEntity>(ctx, m)\n            .await\n            .context(\"Secure insert failed\")?;\n\n        Ok(())\n    }\n    // ... skipped code ...\n}\n",
+      "details": {
+        "input_params": [
+          {
+            "name": "self",
+            "type": "Self"
+          },
+          {
+            "name": "ctx",
+            "type": "&SecurityCtx"
+          },
+          {
+            "name": "u",
+            "type": "User"
+          }
+        ],
+        "return_values": [
+          "anyhow::Result<()>"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::SeaOrmUsersRepository|method::list_users_page_Self_ref_SecurityCtx_ref_ODataQuery",
+      "type": "method",
+      "name": "list_users_page",
+      "description": "Method list_users_page",
+      "public": true,
+      "filename": "src/infra/storage/sea_orm_repo.rs",
+      "start_line": 206,
+      "end_line": 233,
+      "container": "impl UsersRepository for SeaOrmUsersRepository",
+      "source_code": "use modkit_db::secure::{SecureConn, SecurityCtx};\nuse modkit_odata::ODataQuery;\n\nimpl UsersRepository for SeaOrmUsersRepository {\n    // ... skipped code ...\n    async fn list_users_page(\n        &self,\n        ctx: &SecurityCtx,\n        query: &ODataQuery,\n    ) -> Result<Page<User>, modkit_odata::Error> {\n        debug!(\"Listing users with security filtering\");\n\n        let secure_query = self.sec.find::<UserEntity>(ctx).map_err(|e| {\n            tracing::error!(error = %e, \"Failed to create secure query\");\n            modkit_odata::Error::Db(format!(\"Failed to create secure query: {}\", e))\n        })?;\n\n        let base_query = secure_query.into_inner();\n\n        modkit_db::odata::paginate_with_odata::<UserEntity, User, _, _>(\n            base_query,\n            self.sec.conn(),\n            query,\n            &USER_FMAP,\n            (\"id\", SortDir::Desc),\n            modkit_db::odata::LimitCfg {\n                default: 25,\n                max: 1000,\n            },\n            |model| model.into(),\n        )\n        .await\n    }\n}\n",
+      "details": {
+        "input_params": [
+          {
+            "name": "self",
+            "type": "Self"
+          },
+          {
+            "name": "ctx",
+            "type": "&SecurityCtx"
+          },
+          {
+            "name": "query",
+            "type": "&ODataQuery"
+          }
+        ],
+        "return_values": [
+          "Result<Page<User>, modkit_odata::Error>"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::SeaOrmUsersRepository|method::new_SecureConn",
+      "type": "method",
+      "name": "new",
+      "description": "Method new",
+      "public": true,
+      "filename": "src/infra/storage/sea_orm_repo.rs",
+      "start_line": 40,
+      "end_line": 42,
+      "container": "impl SeaOrmUsersRepository",
+      "source_code": "use modkit_db::secure::{SecureConn, SecurityCtx};\n\nimpl SeaOrmUsersRepository {\n    /// Create a new repository with a secure database connection.\n    pub fn new(sec: SecureConn) -> Self {\n        Self { sec }\n    }\n}\n",
+      "details": {
+        "input_params": [
+          {
+            "name": "sec",
+            "type": "SecureConn"
+          }
+        ],
+        "return_values": [
+          "Self"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::SeaOrmUsersRepository|method::update_Self_ref_SecurityCtx_User",
+      "type": "method",
+      "name": "update",
+      "description": "Method update",
+      "public": true,
+      "filename": "src/infra/storage/sea_orm_repo.rs",
+      "start_line": 156,
+      "end_line": 175,
+      "container": "impl UsersRepository for SeaOrmUsersRepository",
+      "source_code": "use crate::contract::User;\nuse modkit_db::secure::{SecureConn, SecurityCtx};\n\nimpl UsersRepository for SeaOrmUsersRepository {\n    // ... skipped code ...\n    async fn update(&self, ctx: &SecurityCtx, u: User) -> anyhow::Result<()> {\n        debug!(\"Updating user with security validation\");\n\n        let m = UserAM {\n            id: Set(u.id),\n            tenant_id: Set(u.tenant_id),\n            email: Set(u.email),\n            display_name: Set(u.display_name),\n            created_at: Set(u.created_at),\n            updated_at: Set(u.updated_at),\n        };\n\n        let _ = self\n            .sec\n            .update_with_ctx::<UserEntity>(ctx, u.id, m)\n            .await\n            .context(\"Secure update failed\")?;\n\n        Ok(())\n    }\n    // ... skipped code ...\n}\n",
+      "details": {
+        "input_params": [
+          {
+            "name": "self",
+            "type": "Self"
+          },
+          {
+            "name": "ctx",
+            "type": "&SecurityCtx"
+          },
+          {
+            "name": "u",
+            "type": "User"
+          }
+        ],
+        "return_values": [
+          "anyhow::Result<()>"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::Service",
+      "type": "class_struct",
+      "name": "Service",
+      "description": "Class Service",
+      "public": true,
+      "filename": "src/domain/service.rs",
+      "start_line": 17,
+      "end_line": 22,
+      "container": "src/domain/service.rs",
+      "source_code": "/// Domain service with business rules for user management.\n/// Depends only on the repository port, not on infra types.\n#[derive(Clone)]\npub struct Service {\n    repo: Arc<dyn UsersRepository>,\n    events: Arc<dyn EventPublisher<UserDomainEvent>>,\n    audit: Arc<dyn AuditPort>,\n    config: ServiceConfig,\n}",
+      "details": {
+        "attributes": [
+          {
+            "name": "repo",
+            "type": "Arc<dyn UsersRepository>"
+          },
+          {
+            "name": "events",
+            "type": "Arc<dyn EventPublisher<UserDomainEvent>>"
+          },
+          {
+            "name": "audit",
+            "type": "Arc<dyn AuditPort>"
+          },
+          {
+            "name": "config",
+            "type": "ServiceConfig"
+          }
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::ServiceConfig",
+      "type": "class_struct",
+      "name": "ServiceConfig",
+      "description": "Class ServiceConfig",
+      "public": true,
+      "filename": "src/domain/service.rs",
+      "start_line": 26,
+      "end_line": 30,
+      "container": "src/domain/service.rs",
+      "source_code": "/// Configuration for the domain service\n#[derive(Debug, Clone)]\npub struct ServiceConfig {\n    pub max_display_name_length: usize,\n    pub default_page_size: u32,\n    pub max_page_size: u32,\n}",
+      "details": {
+        "attributes": [
+          {
+            "name": "max_display_name_length",
+            "type": "usize"
+          },
+          {
+            "name": "default_page_size",
+            "type": "u32"
+          },
+          {
+            "name": "max_page_size",
+            "type": "u32"
+          }
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::ServiceConfig|method::default",
+      "type": "method",
+      "name": "default",
+      "description": "Method default",
+      "public": true,
+      "filename": "src/domain/service.rs",
+      "start_line": 33,
+      "end_line": 39,
+      "container": "impl Default for ServiceConfig",
+      "source_code": "impl Default for ServiceConfig {\n    fn default() -> Self {\n        Self {\n            max_display_name_length: 100,\n            default_page_size: 50,\n            max_page_size: 1000,\n        }\n    }\n}\n",
+      "details": {
+        "input_params": [],
+        "return_values": [
+          "Self"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::Service|method::create_user_Self_ref_SecurityCtx_NewUser",
+      "type": "method",
+      "name": "create_user",
+      "description": "Method create_user",
+      "public": true,
+      "filename": "src/domain/service.rs",
+      "start_line": 97,
+      "end_line": 160,
+      "container": "impl Service",
+      "source_code": "use crate::contract::model::{NewUser, User, UserPatch};\nuse modkit_db::secure::SecurityCtx;\n\nimpl Service {\n    // ... skipped code ...\n    pub async fn create_user(\n        &self,\n        ctx: &SecurityCtx,\n        new_user: NewUser,\n    ) -> Result<User, DomainError> {\n        info!(\"Creating new user\");\n\n        self.validate_new_user(&new_user)?;\n\n        let id = new_user.id.unwrap_or_else(Uuid::now_v7);\n\n        if new_user.id.is_some()\n            && self\n                .repo\n                .find_by_id(ctx, id)\n                .await\n                .map_err(|e| DomainError::database(e.to_string()))?\n                .is_some()\n        {\n            return Err(DomainError::validation(\n                \"id\",\n                \"User with this ID already exists\",\n            ));\n        }\n\n        if self\n            .repo\n            .email_exists(ctx, &new_user.email)\n            .await\n            .map_err(|e| DomainError::database(e.to_string()))?\n        {\n            return Err(DomainError::email_already_exists(new_user.email));\n        }\n\n        let now = Utc::now();\n        let id = new_user.id.unwrap_or_else(uuid::Uuid::now_v7);\n\n        let user = User {\n            id,\n            tenant_id: new_user.tenant_id,\n            email: new_user.email,\n            display_name: new_user.display_name,\n            created_at: now,\n            updated_at: now,\n        };\n\n        self.repo\n            .insert(ctx, user.clone())\n            .await\n            .map_err(|e| DomainError::database(e.to_string()))?;\n\n        let notification_result = self.audit.notify_user_created().await;\n        if let Err(e) = notification_result {\n            debug!(\"Notification service call failed (continuing): {}\", e);\n        }\n\n        self.events.publish(&UserDomainEvent::Created {\n            id: user.id,\n            at: user.created_at,\n        });\n\n        info!(\"Successfully created user with id={}\", user.id);\n        Ok(user)\n    }\n    // ... skipped code ...\n}\n",
+      "details": {
+        "input_params": [
+          {
+            "name": "self",
+            "type": "Self"
+          },
+          {
+            "name": "ctx",
+            "type": "&SecurityCtx"
+          },
+          {
+            "name": "new_user",
+            "type": "NewUser"
+          }
+        ],
+        "return_values": [
+          "Result<User, DomainError>"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::Service|method::delete_user_Self_ref_SecurityCtx_Uuid",
+      "type": "method",
+      "name": "delete_user",
+      "description": "Method delete_user",
+      "public": true,
+      "filename": "src/domain/service.rs",
+      "start_line": 223,
+      "end_line": 241,
+      "container": "impl Service",
+      "source_code": "use modkit_db::secure::SecurityCtx;\nuse uuid::Uuid;\n\nimpl Service {\n    // ... skipped code ...\n    pub async fn delete_user(&self, ctx: &SecurityCtx, id: Uuid) -> Result<(), DomainError> {\n        info!(\"Deleting user\");\n\n        let deleted = self\n            .repo\n            .delete(ctx, id)\n            .await\n            .map_err(|e| DomainError::database(e.to_string()))?;\n\n        if !deleted {\n            return Err(DomainError::user_not_found(id));\n        }\n\n        self.events\n            .publish(&UserDomainEvent::Deleted { id, at: Utc::now() });\n\n        info!(\"Successfully deleted user\");\n        Ok(())\n    }\n    // ... skipped code ...\n}\n",
+      "details": {
+        "input_params": [
+          {
+            "name": "self",
+            "type": "Self"
+          },
+          {
+            "name": "ctx",
+            "type": "&SecurityCtx"
+          },
+          {
+            "name": "id",
+            "type": "Uuid"
+          }
+        ],
+        "return_values": [
+          "Result<(), DomainError>"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::Service|method::get_user_Self_ref_SecurityCtx_Uuid",
+      "type": "method",
+      "name": "get_user",
+      "description": "Method get_user",
+      "public": true,
+      "filename": "src/domain/service.rs",
+      "start_line": 59,
+      "end_line": 75,
+      "container": "impl Service",
+      "source_code": "use modkit_db::secure::SecurityCtx;\nuse uuid::Uuid;\n\nimpl Service {\n    // ... skipped code ...\n    #[instrument(name = \"users_info.service.get_user\", skip(self, ctx), fields(user_id = %id))]\n    pub async fn get_user(&self, ctx: &SecurityCtx, id: Uuid) -> Result<User, DomainError> {\n        debug!(\"Getting user by id\");\n\n        let audit_result = self.audit.get_user_access(id).await;\n        if let Err(e) = audit_result {\n            debug!(\"Audit service call failed (continuing): {}\", e);\n        }\n\n        let user = self\n            .repo\n            .find_by_id(ctx, id)\n            .await\n            .map_err(|e| DomainError::database(e.to_string()))?\n            .ok_or_else(|| DomainError::user_not_found(id))?;\n        debug!(\"Successfully retrieved user\");\n        Ok(user)\n    }\n    // ... skipped code ...\n}\n",
+      "details": {
+        "input_params": [
+          {
+            "name": "self",
+            "type": "Self"
+          },
+          {
+            "name": "ctx",
+            "type": "&SecurityCtx"
+          },
+          {
+            "name": "id",
+            "type": "Uuid"
+          }
+        ],
+        "return_values": [
+          "Result<User, DomainError>"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::Service|method::list_users_page_Self_ref_SecurityCtx_ODataQuery",
+      "type": "method",
+      "name": "list_users_page",
+      "description": "Method list_users_page",
+      "public": true,
+      "filename": "src/domain/service.rs",
+      "start_line": 79,
+      "end_line": 90,
+      "container": "impl Service",
+      "source_code": "use modkit_db::secure::SecurityCtx;\nuse modkit_odata::{ODataQuery, Page};\n\nimpl Service {\n    // ... skipped code ...\n    /// List users with cursor-based pagination\n    #[instrument(name = \"users_info.service.list_users_page\", skip(self, ctx, query))]\n    pub async fn list_users_page(\n        &self,\n        ctx: &SecurityCtx,\n        query: ODataQuery,\n    ) -> Result<Page<User>, modkit_odata::Error> {\n        debug!(\"Listing users with cursor pagination\");\n\n        let page = self.repo.list_users_page(ctx, &query).await?;\n\n        debug!(\"Successfully listed {} users in page\", page.items.len());\n        Ok(page)\n    }\n    // ... skipped code ...\n}\n",
+      "details": {
+        "input_params": [
+          {
+            "name": "self",
+            "type": "Self"
+          },
+          {
+            "name": "ctx",
+            "type": "&SecurityCtx"
+          },
+          {
+            "name": "query",
+            "type": "ODataQuery"
+          }
+        ],
+        "return_values": [
+          "Result<Page<User>, modkit_odata::Error>"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::Service|method::new_Arc<dynUsersRepository>_Arc<dynEventPublisher<UserDomainEvent>>_Arc<dynAuditPort>_ServiceConfig",
+      "type": "method",
+      "name": "new",
+      "description": "Method new",
+      "public": true,
+      "filename": "src/domain/service.rs",
+      "start_line": 44,
+      "end_line": 56,
+      "container": "impl Service",
+      "source_code": "use std::sync::Arc;\n\nimpl Service {\n    /// Create a service with dependencies.\n    pub fn new(\n        repo: Arc<dyn UsersRepository>,\n        events: Arc<dyn EventPublisher<UserDomainEvent>>,\n        audit: Arc<dyn AuditPort>,\n        config: ServiceConfig,\n    ) -> Self {\n        Self {\n            repo,\n            events,\n            audit,\n            config,\n        }\n    }\n    // ... skipped code ...\n}\n",
+      "details": {
+        "input_params": [
+          {
+            "name": "repo",
+            "type": "Arc<dyn UsersRepository>"
+          },
+          {
+            "name": "events",
+            "type": "Arc<dyn EventPublisher<UserDomainEvent>>"
+          },
+          {
+            "name": "audit",
+            "type": "Arc<dyn AuditPort>"
+          },
+          {
+            "name": "config",
+            "type": "ServiceConfig"
+          }
+        ],
+        "return_values": [
+          "Self"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::Service|method::update_user_Self_ref_SecurityCtx_Uuid_UserPatch",
+      "type": "method",
+      "name": "update_user",
+      "description": "Method update_user",
+      "public": true,
+      "filename": "src/domain/service.rs",
+      "start_line": 167,
+      "end_line": 216,
+      "container": "impl Service",
+      "source_code": "use crate::contract::model::{NewUser, User, UserPatch};\nuse modkit_db::secure::SecurityCtx;\nuse uuid::Uuid;\n\nimpl Service {\n    // ... skipped code ...\n    pub async fn update_user(\n        &self,\n        ctx: &SecurityCtx,\n        id: Uuid,\n        patch: UserPatch,\n    ) -> Result<User, DomainError> {\n        info!(\"Updating user\");\n\n        self.validate_user_patch(&patch)?;\n\n        let mut current = self\n            .repo\n            .find_by_id(ctx, id)\n            .await\n            .map_err(|e| DomainError::database(e.to_string()))?\n            .ok_or_else(|| DomainError::user_not_found(id))?;\n\n        if let Some(ref new_email) = patch.email {\n            if new_email != &current.email\n                && self\n                    .repo\n                    .email_exists(ctx, new_email)\n                    .await\n                    .map_err(|e| DomainError::database(e.to_string()))?\n            {\n                return Err(DomainError::email_already_exists(new_email.clone()));\n            }\n        }\n\n        if let Some(email) = patch.email {\n            current.email = email;\n        }\n        if let Some(display_name) = patch.display_name {\n            current.display_name = display_name;\n        }\n        current.updated_at = Utc::now();\n\n        self.repo\n            .update(ctx, current.clone())\n            .await\n            .map_err(|e| DomainError::database(e.to_string()))?;\n\n        self.events.publish(&UserDomainEvent::Updated {\n            id: current.id,\n            at: current.updated_at,\n        });\n\n        info!(\"Successfully updated user\");\n        Ok(current)\n    }\n    // ... skipped code ...\n}\n",
+      "details": {
+        "input_params": [
+          {
+            "name": "self",
+            "type": "Self"
+          },
+          {
+            "name": "ctx",
+            "type": "&SecurityCtx"
+          },
+          {
+            "name": "id",
+            "type": "Uuid"
+          },
+          {
+            "name": "patch",
+            "type": "UserPatch"
+          }
+        ],
+        "return_values": [
+          "Result<User, DomainError>"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::SseUserEventPublisher",
+      "type": "class_struct",
+      "name": "SseUserEventPublisher",
+      "description": "Class SseUserEventPublisher",
+      "public": true,
+      "filename": "src/api/rest/sse_adapter.rs",
+      "start_line": 8,
+      "end_line": 10,
+      "container": "src/api/rest/sse_adapter.rs",
+      "source_code": "/// Adapter: implements domain port and forwards events into SSE broadcaster.\npub struct SseUserEventPublisher {\n    out: SseBroadcaster<UserEvent>,\n}",
+      "details": {
+        "attributes": [
+          {
+            "name": "out",
+            "type": "SseBroadcaster<UserEvent>"
+          }
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::SseUserEventPublisher|method::new_SseBroadcaster<UserEvent>",
+      "type": "method",
+      "name": "new",
+      "description": "Method new",
+      "public": true,
+      "filename": "src/api/rest/sse_adapter.rs",
+      "start_line": 13,
+      "end_line": 15,
+      "container": "impl SseUserEventPublisher",
+      "source_code": "use modkit::SseBroadcaster;\n\nimpl SseUserEventPublisher {\n    pub fn new(out: SseBroadcaster<UserEvent>) -> Self {\n        Self { out }\n    }\n}\n",
+      "details": {
+        "input_params": [
+          {
+            "name": "out",
+            "type": "SseBroadcaster<UserEvent>"
+          }
+        ],
+        "return_values": [
+          "Self"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::SseUserEventPublisher|method::publish_Self_ref_UserDomainEvent",
+      "type": "method",
+      "name": "publish",
+      "description": "Method publish",
+      "public": true,
+      "filename": "src/api/rest/sse_adapter.rs",
+      "start_line": 19,
+      "end_line": 21,
+      "container": "impl EventPublisher<UserDomainEvent> for SseUserEventPublisher",
+      "source_code": "impl EventPublisher<UserDomainEvent> for SseUserEventPublisher {\n    fn publish(&self, event: &UserDomainEvent) {\n        self.out.send(UserEvent::from(event));\n    }\n}\n",
+      "details": {
+        "input_params": [
+          {
+            "name": "self",
+            "type": "Self"
+          },
+          {
+            "name": "event",
+            "type": "&UserDomainEvent"
+          }
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::User",
+      "type": "class_struct",
+      "name": "User",
+      "description": "Class User",
+      "public": true,
+      "filename": "src/contract/model.rs",
+      "start_line": 5,
+      "end_line": 12,
+      "container": "src/contract/model.rs",
+      "source_code": "#[derive(Debug, Clone, PartialEq, Eq)]\npub struct User {\n    pub id: Uuid,\n    pub tenant_id: Uuid,\n    pub email: String,\n    pub display_name: String,\n    pub created_at: DateTime<Utc>,\n    pub updated_at: DateTime<Utc>,\n}",
+      "details": {
+        "attributes": [
+          {
+            "name": "id",
+            "type": "Uuid"
+          },
+          {
+            "name": "tenant_id",
+            "type": "Uuid"
+          },
+          {
+            "name": "email",
+            "type": "String"
+          },
+          {
+            "name": "display_name",
+            "type": "String"
+          },
+          {
+            "name": "created_at",
+            "type": "DateTime<Utc>"
+          },
+          {
+            "name": "updated_at",
+            "type": "DateTime<Utc>"
+          }
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::UserDto",
+      "type": "class_struct",
+      "name": "UserDto",
+      "description": "Class UserDto",
+      "public": true,
+      "filename": "src/api/rest/dto.rs",
+      "start_line": 10,
+      "end_line": 17,
+      "container": "src/api/rest/dto.rs",
+      "source_code": "/// REST DTO for user representation with serde/utoipa\n#[derive(Debug, Clone, Serialize, Deserialize, ToSchema)]\npub struct UserDto {\n    pub id: Uuid,\n    pub tenant_id: Uuid,\n    pub email: String,\n    pub display_name: String,\n    pub created_at: DateTime<Utc>,\n    pub updated_at: DateTime<Utc>,\n}",
+      "details": {
+        "attributes": [
+          {
+            "name": "id",
+            "type": "Uuid"
+          },
+          {
+            "name": "tenant_id",
+            "type": "Uuid"
+          },
+          {
+            "name": "email",
+            "type": "String"
+          },
+          {
+            "name": "display_name",
+            "type": "String"
+          },
+          {
+            "name": "created_at",
+            "type": "DateTime<Utc>"
+          },
+          {
+            "name": "updated_at",
+            "type": "DateTime<Utc>"
+          }
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::UserDto|method::from_User",
+      "type": "method",
+      "name": "from",
+      "description": "Method from",
+      "public": true,
+      "filename": "src/api/rest/dto.rs",
+      "start_line": 39,
+      "end_line": 48,
+      "container": "impl From<User> for UserDto",
+      "source_code": "use crate::contract::model::{NewUser, User, UserPatch};\n\nimpl From<User> for UserDto {\n    fn from(user: User) -> Self {\n        Self {\n            id: user.id,\n            tenant_id: user.tenant_id,\n            email: user.email,\n            display_name: user.display_name,\n            created_at: user.created_at,\n            updated_at: user.updated_at,\n        }\n    }\n}\n",
+      "details": {
+        "input_params": [
+          {
+            "name": "user",
+            "type": "User"
+          }
+        ],
+        "return_values": [
+          "Self"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::UserEvent",
+      "type": "class_struct",
+      "name": "UserEvent",
+      "description": "Class UserEvent",
+      "public": true,
+      "filename": "src/api/rest/dto.rs",
+      "start_line": 74,
+      "end_line": 79,
+      "container": "src/api/rest/dto.rs",
+      "source_code": "/// Transport-level SSE payload.\n#[derive(Debug, Clone, Serialize, Deserialize, ToSchema)]\n#[schema(title = \"UserEvent\", description = \"Server-sent user event\")]\npub struct UserEvent {\n    pub kind: String,\n    pub id: Uuid,\n    #[schema(format = \"date-time\")]\n    pub at: DateTime<Utc>,\n}",
+      "details": {
+        "attributes": [
+          {
+            "name": "kind",
+            "type": "String"
+          },
+          {
+            "name": "id",
+            "type": "Uuid"
+          },
+          {
+            "name": "at",
+            "type": "DateTime<Utc>"
+          }
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::UserEvent|method::from_ref_crate::domain::events::UserDomainEvent",
+      "type": "method",
+      "name": "from",
+      "description": "Method from",
+      "public": true,
+      "filename": "src/api/rest/dto.rs",
+      "start_line": 82,
+      "end_line": 101,
+      "container": "impl From<&crate::domain::events::UserDomainEvent> for UserEvent",
+      "source_code": "    use crate::domain::events::UserDomainEvent;\n\nimpl From<&crate::domain::events::UserDomainEvent> for UserEvent {\n    fn from(e: &crate::domain::events::UserDomainEvent) -> Self {\n        use crate::domain::events::UserDomainEvent::*;\n        match e {\n            Created { id, at } => Self {\n                kind: \"created\".into(),\n                id: *id,\n                at: *at,\n            },\n            Updated { id, at } => Self {\n                kind: \"updated\".into(),\n                id: *id,\n                at: *at,\n            },\n            Deleted { id, at } => Self {\n                kind: \"deleted\".into(),\n                id: *id,\n                at: *at,\n            },\n        }\n    }\n}\n",
+      "details": {
+        "input_params": [
+          {
+            "name": "e",
+            "type": "&crate::domain::events::UserDomainEvent"
+          }
+        ],
+        "return_values": [
+          "Self"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::UserPatch",
+      "type": "class_struct",
+      "name": "UserPatch",
+      "description": "Class UserPatch",
+      "public": true,
+      "filename": "src/contract/model.rs",
+      "start_line": 25,
+      "end_line": 28,
+      "container": "src/contract/model.rs",
+      "source_code": "/// Partial update data for a user\n#[derive(Debug, Clone, PartialEq, Eq, Default)]\npub struct UserPatch {\n    pub email: Option<String>,\n    pub display_name: Option<String>,\n}",
+      "details": {
+        "attributes": [
+          {
+            "name": "email",
+            "type": "Option<String>"
+          },
+          {
+            "name": "display_name",
+            "type": "Option<String>"
+          }
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::UserPatch|method::from_UpdateUserReq",
+      "type": "method",
+      "name": "from",
+      "description": "Method from",
+      "public": true,
+      "filename": "src/api/rest/dto.rs",
+      "start_line": 63,
+      "end_line": 68,
+      "container": "impl From<UpdateUserReq> for UserPatch",
+      "source_code": "impl From<UpdateUserReq> for UserPatch {\n    fn from(req: UpdateUserReq) -> Self {\n        Self {\n            email: req.email,\n            display_name: req.display_name,\n        }\n    }\n}\n",
+      "details": {
+        "input_params": [
+          {
+            "name": "req",
+            "type": "UpdateUserReq"
+          }
+        ],
+        "return_values": [
+          "Self"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::UsersInfo",
+      "type": "class_struct",
+      "name": "UsersInfo",
+      "description": "Class UsersInfo",
+      "public": true,
+      "filename": "src/module.rs",
+      "start_line": 28,
+      "end_line": 33,
+      "container": "src/module.rs",
+      "source_code": "/// Main module struct with DDD-light layout and proper ClientHub integration\n#[modkit::module(\n    name = \"users_info\",\n    capabilities = [db, rest],\n    client = crate::contract::client::UsersInfoApi\n)]\npub struct UsersInfo {\n    // Keep the domain service behind ArcSwap for cheap read-mostly access.\n    service: arc_swap::ArcSwapOption<Service>,\n    // SSE broadcaster for user events\n    sse: SseBroadcaster<UserEvent>,\n}",
+      "details": {
+        "attributes": [
+          {
+            "name": "service",
+            "type": "arc_swap::ArcSwapOption<Service>"
+          },
+          {
+            "name": "sse",
+            "type": "SseBroadcaster<UserEvent>"
+          }
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::UsersInfoConfig",
+      "type": "class_struct",
+      "name": "UsersInfoConfig",
+      "description": "Class UsersInfoConfig",
+      "public": true,
+      "filename": "src/config.rs",
+      "start_line": 6,
+      "end_line": 15,
+      "container": "src/config.rs",
+      "source_code": "/// Configuration for the users_info module\n#[derive(Debug, Clone, Serialize, Deserialize)]\n#[serde(deny_unknown_fields)]\npub struct UsersInfoConfig {\n    #[serde(default = \"default_page_size\")]\n    pub default_page_size: u32,\n    #[serde(default = \"default_max_page_size\")]\n    pub max_page_size: u32,\n    #[serde(default = \"default_audit_base_url\")]\n    pub audit_base_url: String,\n    #[serde(default = \"default_notifications_base_url\")]\n    pub notifications_base_url: String,\n}",
+      "details": {
+        "attributes": [
+          {
+            "name": "default_page_size",
+            "type": "u32"
+          },
+          {
+            "name": "max_page_size",
+            "type": "u32"
+          },
+          {
+            "name": "audit_base_url",
+            "type": "String"
+          },
+          {
+            "name": "notifications_base_url",
+            "type": "String"
+          }
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::UsersInfoConfig|method::default",
+      "type": "method",
+      "name": "default",
+      "description": "Method default",
+      "public": true,
+      "filename": "src/config.rs",
+      "start_line": 18,
+      "end_line": 25,
+      "container": "impl Default for UsersInfoConfig",
+      "source_code": "impl Default for UsersInfoConfig {\n    fn default() -> Self {\n        Self {\n            default_page_size: default_page_size(),\n            max_page_size: default_max_page_size(),\n            audit_base_url: default_audit_base_url(),\n            notifications_base_url: default_notifications_base_url(),\n        }\n    }\n}\n",
+      "details": {
+        "input_params": [],
+        "return_values": [
+          "Self"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::UsersInfoError|method::conflict_String",
+      "type": "method",
+      "name": "conflict",
+      "description": "Method conflict",
+      "public": true,
+      "filename": "src/contract/error.rs",
+      "start_line": 25,
+      "end_line": 27,
+      "container": "impl UsersInfoError",
+      "source_code": "impl UsersInfoError {\n    // ... skipped code ...\n    pub fn conflict(email: String) -> Self {\n        Self::Conflict { email }\n    }\n    // ... skipped code ...\n}\n",
+      "details": {
+        "input_params": [
+          {
+            "name": "email",
+            "type": "String"
+          }
+        ],
+        "return_values": [
+          "Self"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::UsersInfoError|method::from_crate::domain::error::DomainError",
+      "type": "method",
+      "name": "from",
+      "description": "Method from",
+      "public": true,
+      "filename": "src/contract/error.rs",
+      "start_line": 41,
+      "end_line": 55,
+      "container": "impl From<crate::domain::error::DomainError> for UsersInfoError",
+      "source_code": "impl From<crate::domain::error::DomainError> for UsersInfoError {\n    fn from(domain_error: crate::domain::error::DomainError) -> Self {\n        use crate::domain::error::DomainError::*;\n        match domain_error {\n            UserNotFound { id } => Self::not_found(id),\n            EmailAlreadyExists { email } => Self::conflict(email),\n            InvalidEmail { email } => Self::validation(format!(\"Invalid email: {}\", email)),\n            EmptyDisplayName => Self::validation(\"Display name cannot be empty\".to_string()),\n            DisplayNameTooLong { len, max } => Self::validation(format!(\n                \"Display name too long: {} characters (max: {})\",\n                len, max\n            )),\n            Validation { field, message } => Self::validation(format!(\"{}: {}\", field, message)),\n            Database { .. } => Self::internal(),\n        }\n    }\n}\n",
+      "details": {
+        "input_params": [
+          {
+            "name": "domain_error",
+            "type": "crate::domain::error::DomainError"
+          }
+        ],
+        "return_values": [
+          "Self"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::UsersInfoError|method::internal",
+      "type": "method",
+      "name": "internal",
+      "description": "Method internal",
+      "public": true,
+      "filename": "src/contract/error.rs",
+      "start_line": 35,
+      "end_line": 37,
+      "container": "impl UsersInfoError",
+      "source_code": "impl UsersInfoError {\n    // ... skipped code ...\n    pub fn internal() -> Self {\n        Self::Internal\n    }\n}\n",
+      "details": {
+        "input_params": [],
+        "return_values": [
+          "Self"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::UsersInfoError|method::not_found_Uuid",
+      "type": "method",
+      "name": "not_found",
+      "description": "Method not_found",
+      "public": true,
+      "filename": "src/contract/error.rs",
+      "start_line": 21,
+      "end_line": 23,
+      "container": "impl UsersInfoError",
+      "source_code": "use uuid::Uuid;\n\nimpl UsersInfoError {\n    pub fn not_found(id: Uuid) -> Self {\n        Self::NotFound { id }\n    }\n    // ... skipped code ...\n}\n",
+      "details": {
+        "input_params": [
+          {
+            "name": "id",
+            "type": "Uuid"
+          }
+        ],
+        "return_values": [
+          "Self"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::UsersInfoError|method::validation_implInto<String>",
+      "type": "method",
+      "name": "validation",
+      "description": "Method validation",
+      "public": true,
+      "filename": "src/contract/error.rs",
+      "start_line": 29,
+      "end_line": 33,
+      "container": "impl UsersInfoError",
+      "source_code": "impl UsersInfoError {\n    // ... skipped code ...\n    pub fn validation(message: impl Into<String>) -> Self {\n        Self::Validation {\n            message: message.into(),\n        }\n    }\n    // ... skipped code ...\n}\n",
+      "details": {
+        "input_params": [
+          {
+            "name": "message",
+            "type": "impl Into<String>"
+          }
+        ],
+        "return_values": [
+          "Self"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::UsersInfoLocalClient",
+      "type": "class_struct",
+      "name": "UsersInfoLocalClient",
+      "description": "Class UsersInfoLocalClient",
+      "public": true,
+      "filename": "src/gateways/local.rs",
+      "start_line": 18,
+      "end_line": 20,
+      "container": "src/gateways/local.rs",
+      "source_code": "/// Local implementation of the UsersInfoApi trait that delegates to the domain service.\n///\n/// This client is used for inter-module communication within the same process.\n/// It uses a system-level security context with resource-based access control.\npub struct UsersInfoLocalClient {\n    service: Arc<Service>,\n}",
+      "details": {
+        "attributes": [
+          {
+            "name": "service",
+            "type": "Arc<Service>"
+          }
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::UsersInfoLocalClient|method::create_user_Self_NewUser",
+      "type": "method",
+      "name": "create_user",
+      "description": "Method create_user",
+      "public": true,
+      "filename": "src/gateways/local.rs",
+      "start_line": 82,
+      "end_line": 89,
+      "container": "impl UsersInfoApi for UsersInfoLocalClient",
+      "source_code": "impl UsersInfoApi for UsersInfoLocalClient {\n    // ... skipped code ...\n    async fn create_user(&self, new_user: NewUser) -> Result<User, UsersInfoError> {\n        // For create, we use deny_all since the resource doesn't exist yet\n        let ctx = self.system_ctx_global();\n        self.service\n            .create_user(&ctx, new_user)\n            .await\n            .map_err(Into::into)\n    }\n    // ... skipped code ...\n}\n",
+      "details": {
+        "input_params": [
+          {
+            "name": "self",
+            "type": "Self"
+          },
+          {
+            "name": "new_user",
+            "type": "NewUser"
+          }
+        ],
+        "return_values": [
+          "Result<User, UsersInfoError>"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::UsersInfoLocalClient|method::delete_user_Self_Uuid",
+      "type": "method",
+      "name": "delete_user",
+      "description": "Method delete_user",
+      "public": true,
+      "filename": "src/gateways/local.rs",
+      "start_line": 99,
+      "end_line": 102,
+      "container": "impl UsersInfoApi for UsersInfoLocalClient",
+      "source_code": "use uuid::Uuid;\n\nimpl UsersInfoApi for UsersInfoLocalClient {\n    // ... skipped code ...\n    async fn delete_user(&self, id: Uuid) -> Result<(), UsersInfoError> {\n        let ctx = self.system_ctx_for_resource(id);\n        self.service.delete_user(&ctx, id).await.map_err(Into::into)\n    }\n}\n",
+      "details": {
+        "input_params": [
+          {
+            "name": "self",
+            "type": "Self"
+          },
+          {
+            "name": "id",
+            "type": "Uuid"
+          }
+        ],
+        "return_values": [
+          "Result<(), UsersInfoError>"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::UsersInfoLocalClient|method::get_user_Self_Uuid",
+      "type": "method",
+      "name": "get_user",
+      "description": "Method get_user",
+      "public": true,
+      "filename": "src/gateways/local.rs",
+      "start_line": 62,
+      "end_line": 65,
+      "container": "impl UsersInfoApi for UsersInfoLocalClient",
+      "source_code": "use uuid::Uuid;\n\nimpl UsersInfoApi for UsersInfoLocalClient {\n    async fn get_user(&self, id: Uuid) -> Result<User, UsersInfoError> {\n        let ctx = self.system_ctx_for_resource(id);\n        self.service.get_user(&ctx, id).await.map_err(Into::into)\n    }\n    // ... skipped code ...\n}\n",
+      "details": {
+        "input_params": [
+          {
+            "name": "self",
+            "type": "Self"
+          },
+          {
+            "name": "id",
+            "type": "Uuid"
+          }
+        ],
+        "return_values": [
+          "Result<User, UsersInfoError>"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::UsersInfoLocalClient|method::list_users_Self_ODataQuery",
+      "type": "method",
+      "name": "list_users",
+      "description": "Method list_users",
+      "public": true,
+      "filename": "src/gateways/local.rs",
+      "start_line": 67,
+      "end_line": 80,
+      "container": "impl UsersInfoApi for UsersInfoLocalClient",
+      "source_code": "use modkit_odata::{ODataQuery, Page};\n\nimpl UsersInfoApi for UsersInfoLocalClient {\n    // ... skipped code ...\n    async fn list_users(&self, query: ODataQuery) -> Result<Page<User>, UsersInfoError> {\n        // Note: Using deny_all context for global entities without proper tenant isolation\n        // This is a limitation of the example. In production, implement proper multi-tenancy.\n        let ctx = self.system_ctx_global();\n        self.service\n            .list_users_page(&ctx, query)\n            .await\n            .map_err(|e| {\n                // OData errors at this layer are unexpected (query construction errors)\n                // Log and convert to internal error\n                tracing::error!(error = ?e, \"Unexpected OData error in gateway\");\n                UsersInfoError::internal()\n            })\n    }\n    // ... skipped code ...\n}\n",
+      "details": {
+        "input_params": [
+          {
+            "name": "self",
+            "type": "Self"
+          },
+          {
+            "name": "query",
+            "type": "ODataQuery"
+          }
+        ],
+        "return_values": [
+          "Result<Page<User>, UsersInfoError>"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::UsersInfoLocalClient|method::update_user_Self_Uuid_UserPatch",
+      "type": "method",
+      "name": "update_user",
+      "description": "Method update_user",
+      "public": true,
+      "filename": "src/gateways/local.rs",
+      "start_line": 91,
+      "end_line": 97,
+      "container": "impl UsersInfoApi for UsersInfoLocalClient",
+      "source_code": "use uuid::Uuid;\n\nimpl UsersInfoApi for UsersInfoLocalClient {\n    // ... skipped code ...\n    async fn update_user(&self, id: Uuid, patch: UserPatch) -> Result<User, UsersInfoError> {\n        let ctx = self.system_ctx_for_resource(id);\n        self.service\n            .update_user(&ctx, id, patch)\n            .await\n            .map_err(Into::into)\n    }\n    // ... skipped code ...\n}\n",
+      "details": {
+        "input_params": [
+          {
+            "name": "self",
+            "type": "Self"
+          },
+          {
+            "name": "id",
+            "type": "Uuid"
+          },
+          {
+            "name": "patch",
+            "type": "UserPatch"
+          }
+        ],
+        "return_values": [
+          "Result<User, UsersInfoError>"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::UsersInfo|method::as_any_Self",
+      "type": "method",
+      "name": "as_any",
+      "description": "Method as_any",
+      "public": true,
+      "filename": "src/module.rs",
+      "start_line": 107,
+      "end_line": 109,
+      "container": "impl Module for UsersInfo",
+      "source_code": "impl Module for UsersInfo {\n    // ... skipped code ...\n    fn as_any(&self) -> &dyn std::any::Any {\n        self\n    }\n}\n",
+      "details": {
+        "input_params": [
+          {
+            "name": "self",
+            "type": "Self"
+          }
+        ],
+        "return_values": [
+          "&dyn std::any::Any"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::UsersInfo|method::clone_Self",
+      "type": "method",
+      "name": "clone",
+      "description": "Method clone",
+      "public": true,
+      "filename": "src/module.rs",
+      "start_line": 45,
+      "end_line": 50,
+      "container": "impl Clone for UsersInfo",
+      "source_code": "impl Clone for UsersInfo {\n    fn clone(&self) -> Self {\n        Self {\n            service: arc_swap::ArcSwapOption::new(self.service.load().as_ref().map(|s| s.clone())),\n            sse: self.sse.clone(),\n        }\n    }\n}\n",
+      "details": {
+        "input_params": [
+          {
+            "name": "self",
+            "type": "Self"
+          }
+        ],
+        "return_values": [
+          "Self"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::UsersInfo|method::default",
+      "type": "method",
+      "name": "default",
+      "description": "Method default",
+      "public": true,
+      "filename": "src/module.rs",
+      "start_line": 36,
+      "end_line": 41,
+      "container": "impl Default for UsersInfo",
+      "source_code": "impl Default for UsersInfo {\n    fn default() -> Self {\n        Self {\n            service: arc_swap::ArcSwapOption::from(None),\n            sse: SseBroadcaster::new(1024),\n        }\n    }\n}\n",
+      "details": {
+        "input_params": [],
+        "return_values": [
+          "Self"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::UsersInfo|method::init_Self_ref_ModuleCtx",
+      "type": "method",
+      "name": "init",
+      "description": "Method init",
+      "public": true,
+      "filename": "src/module.rs",
+      "start_line": 55,
+      "end_line": 105,
+      "container": "impl Module for UsersInfo",
+      "source_code": "use modkit::{DbModule, Module, ModuleCtx, RestfulModule, SseBroadcaster, TracedClient};\n\nimpl Module for UsersInfo {\n    async fn init(&self, ctx: &ModuleCtx) -> anyhow::Result<()> {\n        info!(\"Initializing users_info module\");\n\n        // Load module configuration using new API\n        let cfg: UsersInfoConfig = ctx.config()?;\n        debug!(\n            \"Loaded users_info config: default_page_size={}, max_page_size={}\",\n            cfg.default_page_size, cfg.max_page_size\n        );\n\n        // Acquire DB (SeaORM connection handle with security enforcement)\n        let db = ctx.db_required()?;\n        let sec_conn = db.sea_secure(); // SecureConn - enforces access control on all queries\n\n        // Wire repository (infra) to domain service (port)\n        // Repository now uses SecureConn to automatically apply security filtering\n        let repo = SeaOrmUsersRepository::new(sec_conn);\n\n        // Create event publisher adapter that bridges domain events to SSE\n        let publisher: Arc<dyn EventPublisher<UserDomainEvent>> =\n            Arc::new(SseUserEventPublisher::new(self.sse.clone()));\n\n        // Build traced HTTP client\n        let traced_client = TracedClient::default();\n\n        // Parse audit service URLs from config\n        let audit_base = Url::parse(&cfg.audit_base_url)\n            .map_err(|e| anyhow::anyhow!(\"invalid audit_base_url: {}\", e))?;\n        let notify_base = Url::parse(&cfg.notifications_base_url)\n            .map_err(|e| anyhow::anyhow!(\"invalid notifications_base_url: {}\", e))?;\n\n        // Create audit adapter\n        let audit_adapter: Arc<dyn AuditPort> =\n            Arc::new(HttpAuditClient::new(traced_client, audit_base, notify_base));\n\n        let service_config = ServiceConfig {\n            max_display_name_length: 100,\n            default_page_size: cfg.default_page_size,\n            max_page_size: cfg.max_page_size,\n        };\n        let service = Service::new(Arc::new(repo), publisher, audit_adapter, service_config);\n\n        // Store service for REST and local client\n        self.service.store(Some(Arc::new(service.clone())));\n\n        // Local in-process client implementation published to ClientHub\n        let api: Arc<dyn UsersInfoApi> = Arc::new(UsersInfoLocalClient::new(Arc::new(service)));\n        expose_users_info_client(ctx, &api)?;\n        info!(\"UsersInfo API exposed to ClientHub\");\n        Ok(())\n    }\n    // ... skipped code ...\n}\n",
+      "details": {
+        "input_params": [
+          {
+            "name": "self",
+            "type": "Self"
+          },
+          {
+            "name": "ctx",
+            "type": "&ModuleCtx"
+          }
+        ],
+        "return_values": [
+          "anyhow::Result<()>"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::UsersInfo|method::migrate_Self_ref_modkit_db::DbHandle",
+      "type": "method",
+      "name": "migrate",
+      "description": "Method migrate",
+      "public": true,
+      "filename": "src/module.rs",
+      "start_line": 114,
+      "end_line": 120,
+      "container": "impl DbModule for UsersInfo",
+      "source_code": "impl DbModule for UsersInfo {\n    async fn migrate(&self, db: &modkit_db::DbHandle) -> anyhow::Result<()> {\n        info!(\"Running users_info database migrations\");\n        let conn = db.sea();\n        crate::infra::storage::migrations::Migrator::up(&conn, None).await?;\n        info!(\"Users database migrations completed successfully\");\n        Ok(())\n    }\n}\n",
+      "details": {
+        "input_params": [
+          {
+            "name": "self",
+            "type": "Self"
+          },
+          {
+            "name": "db",
+            "type": "&modkit_db::DbHandle"
+          }
+        ],
+        "return_values": [
+          "anyhow::Result<()>"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::UsersInfo|method::register_rest_Self_ref_ModuleCtx_axum::Router_ref_dynOpenApiRegistry",
+      "type": "method",
+      "name": "register_rest",
+      "description": "Method register_rest",
+      "public": true,
+      "filename": "src/module.rs",
+      "start_line": 124,
+      "end_line": 146,
+      "container": "impl RestfulModule for UsersInfo",
+      "source_code": "use modkit::{DbModule, Module, ModuleCtx, RestfulModule, SseBroadcaster, TracedClient};\n\nimpl RestfulModule for UsersInfo {\n    fn register_rest(\n        &self,\n        _ctx: &ModuleCtx,\n        router: axum::Router,\n        openapi: &dyn OpenApiRegistry,\n    ) -> anyhow::Result<axum::Router> {\n        info!(\"Registering users_info REST routes\");\n\n        let service = self\n            .service\n            .load()\n            .as_ref()\n            .ok_or_else(|| anyhow::anyhow!(\"Service not initialized\"))?\n            .clone();\n\n        let router = routes::register_routes(router, openapi, service)?;\n\n        // Register SSE route with per-route Extension\n        let router = routes::register_users_sse_route(router, openapi, self.sse.clone());\n\n        info!(\"Users REST routes registered successfully\");\n        Ok(router)\n    }\n}\n",
+      "details": {
+        "input_params": [
+          {
+            "name": "self",
+            "type": "Self"
+          },
+          {
+            "name": "_ctx",
+            "type": "&ModuleCtx"
+          },
+          {
+            "name": "router",
+            "type": "axum::Router"
+          },
+          {
+            "name": "openapi",
+            "type": "&dyn OpenApiRegistry"
+          }
+        ],
+        "return_values": [
+          "anyhow::Result<axum::Router>"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::User|method::from_UserEntity",
+      "type": "method",
+      "name": "from",
+      "description": "Method from",
+      "public": true,
+      "filename": "src/infra/storage/mapper.rs",
+      "start_line": 6,
+      "end_line": 15,
+      "container": "impl From<UserEntity> for User",
+      "source_code": "use crate::infra::storage::entity::Model as UserEntity;\n\nimpl From<UserEntity> for User {\n    fn from(e: UserEntity) -> Self {\n        Self {\n            id: e.id,\n            tenant_id: e.tenant_id,\n            email: e.email,\n            display_name: e.display_name,\n            created_at: e.created_at,\n            updated_at: e.updated_at,\n        }\n    }\n}\n",
+      "details": {
+        "input_params": [
+          {
+            "name": "e",
+            "type": "UserEntity"
+          }
+        ],
+        "return_values": [
+          "Self"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|class_struct::User|method::from_ref_UserEntity",
+      "type": "method",
+      "name": "from",
+      "description": "Method from",
+      "public": true,
+      "filename": "src/infra/storage/mapper.rs",
+      "start_line": 20,
+      "end_line": 29,
+      "container": "impl From<&UserEntity> for User",
+      "source_code": "use crate::infra::storage::entity::Model as UserEntity;\n\nimpl From<&UserEntity> for User {\n    fn from(e: &UserEntity) -> Self {\n        Self {\n            id: e.id,\n            tenant_id: e.tenant_id,\n            email: e.email.clone(),\n            display_name: e.display_name.clone(),\n            created_at: e.created_at,\n            updated_at: e.updated_at,\n        }\n    }\n}\n",
+      "details": {
+        "input_params": [
+          {
+            "name": "e",
+            "type": "&UserEntity"
+          }
+        ],
+        "return_values": [
+          "Self"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|enum::DomainError",
+      "type": "enum",
+      "name": "DomainError",
+      "description": "Enum DomainError",
+      "public": true,
+      "filename": "src/domain/error.rs",
+      "start_line": 6,
+      "end_line": 27,
+      "container": "src/domain/error.rs",
+      "source_code": "/// Domain-specific errors using thiserror\n#[derive(Error, Debug)]\npub enum DomainError {\n    #[error(\"User not found: {id}\")]\n    UserNotFound { id: Uuid },\n\n    #[error(\"User with email '{email}' already exists\")]\n    EmailAlreadyExists { email: String },\n\n    #[error(\"Invalid email format: '{email}'\")]\n    InvalidEmail { email: String },\n\n    #[error(\"Display name cannot be empty\")]\n    EmptyDisplayName,\n\n    #[error(\"Display name too long: {len} characters (max: {max})\")]\n    DisplayNameTooLong { len: usize, max: usize },\n\n    #[error(\"Database error: {message}\")]\n    Database { message: String },\n\n    #[error(\"Validation failed: {field}: {message}\")]\n    Validation { field: String, message: String },\n}",
+      "details": {
+        "values": [
+          "UserNotFound",
+          "EmailAlreadyExists",
+          "InvalidEmail",
+          "EmptyDisplayName",
+          "DisplayNameTooLong",
+          "Database",
+          "Validation"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|enum::Relation",
+      "type": "enum",
+      "name": "Relation",
+      "description": "Enum Relation",
+      "public": true,
+      "filename": "src/infra/storage/entity.rs",
+      "start_line": 29,
+      "end_line": 29,
+      "container": "src/infra/storage/entity.rs",
+      "source_code": "#[derive(Copy, Clone, Debug, EnumIter, DeriveRelation)]\npub enum Relation {}",
+      "details": {
+        "values": []
+      }
+    },
+    {
+      "id": "crate::users_info|enum::UserDomainEvent",
+      "type": "enum",
+      "name": "UserDomainEvent",
+      "description": "Enum UserDomainEvent",
+      "public": true,
+      "filename": "src/domain/events.rs",
+      "start_line": 6,
+      "end_line": 10,
+      "container": "src/domain/events.rs",
+      "source_code": "/// Transport-agnostic domain event.\n#[derive(Debug, Clone)]\npub enum UserDomainEvent {\n    Created { id: Uuid, at: DateTime<Utc> },\n    Updated { id: Uuid, at: DateTime<Utc> },\n    Deleted { id: Uuid, at: DateTime<Utc> },\n}",
+      "details": {
+        "values": [
+          "Created",
+          "Updated",
+          "Deleted"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|enum::UsersInfoError",
+      "type": "enum",
+      "name": "UsersInfoError",
+      "description": "Enum UsersInfoError",
+      "public": true,
+      "filename": "src/contract/error.rs",
+      "start_line": 6,
+      "end_line": 18,
+      "container": "src/contract/error.rs",
+      "source_code": "/// Errors that are safe to expose to other modules\n#[derive(Error, Debug, Clone)]\npub enum UsersInfoError {\n    #[error(\"User not found: {id}\")]\n    NotFound { id: Uuid },\n\n    #[error(\"User with email '{email}' already exists\")]\n    Conflict { email: String },\n\n    #[error(\"Validation error: {message}\")]\n    Validation { message: String },\n\n    #[error(\"Internal error\")]\n    Internal,\n}",
+      "details": {
+        "values": [
+          "NotFound",
+          "Conflict",
+          "Validation",
+          "Internal"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|fn::create_user_Authz_Extension<std::sync::Arc<Service>>_Json<CreateUserReq>",
+      "type": "function",
+      "name": "create_user",
+      "description": "Function create_user",
+      "public": true,
+      "filename": "src/api/rest/handlers.rs",
+      "start_line": 88,
+      "end_line": 139,
+      "container": "src/api/rest/handlers.rs",
+      "source_code": "/// Create a new user\n#[tracing::instrument(\n    name = \"users_info.create_user\",\n    skip(svc, req_body, ctx),\n    fields(\n        user.email = %req_body.email,\n        user.display_name = %req_body.display_name,\n        user.tenant_id = %req_body.tenant_id,\n        request_id = Empty,\n        creator.id = %ctx.subject_id()\n    )\n)]\npub async fn create_user(\n    Authz(ctx): Authz,\n    Extension(svc): Extension<std::sync::Arc<Service>>,\n    Json(req_body): Json<CreateUserReq>,\n) -> UsersResult<impl IntoResponse> {\n    info!(\n        email = %req_body.email,\n        display_name = %req_body.display_name,\n        tenant_id = %req_body.tenant_id,\n        creator_id = %ctx.subject_id(),\n        \"Creating new user\"\n    );\n\n    let CreateUserReq {\n        id,\n        tenant_id,\n        email,\n        display_name,\n    } = req_body;\n\n    // Authorization check:\n    // - root scope: allow any tenant_id\n    // - non-root: tenant_id must be present in scope.tenant_ids()\n    let scope = ctx.scope();\n    if !scope.is_root() {\n        let allowed = scope.tenant_ids().iter().any(|t| t == &tenant_id);\n        if !allowed {\n            return Err(UsersApiError::from_domain(\n                crate::domain::error::DomainError::validation(\n                    \"tenant_id\",\n                    format!(\n                        \"Tenant {} is not allowed in current security scope\",\n                        tenant_id\n                    ),\n                ),\n            ));\n        }\n    }\n\n    let new_user = crate::contract::model::NewUser {\n        id,\n        tenant_id,\n        email,\n        display_name,\n    };\n\n    let user = svc\n        .create_user(&ctx, new_user)\n        .await\n        .map_err(UsersApiError::from_domain)?;\n    Ok(created_json(UserDto::from(user)))\n}",
+      "details": {
+        "input_params": [
+          {
+            "name": "arg",
+            "type": "Authz"
+          },
+          {
+            "name": "arg",
+            "type": "Extension<std::sync::Arc<Service>>"
+          },
+          {
+            "name": "arg",
+            "type": "Json<CreateUserReq>"
+          }
+        ],
+        "return_values": [
+          "UsersResult<impl IntoResponse>"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|fn::ctx_allow_resources_ref_[Uuid]",
+      "type": "function",
+      "name": "ctx_allow_resources",
+      "description": "Function ctx_allow_resources",
+      "public": true,
+      "filename": "tests/support.rs",
+      "start_line": 33,
+      "end_line": 36,
+      "container": "tests/support.rs",
+      "source_code": "/// Create a security context that allows access to specific resources.\n///\n/// Uses a random subject ID for testing purposes.\npub fn ctx_allow_resources(resources: &[Uuid]) -> SecurityCtx {\n    let subject = Subject::new(Uuid::new_v4());\n    SecurityCtx::new(AccessScope::resources_only(resources.to_vec()), subject)\n}",
+      "details": {
+        "input_params": [
+          {
+            "name": "resources",
+            "type": "&[Uuid]"
+          }
+        ],
+        "return_values": [
+          "SecurityCtx"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|fn::ctx_allow_tenants_ref_[Uuid]",
+      "type": "function",
+      "name": "ctx_allow_tenants",
+      "description": "Function ctx_allow_tenants",
+      "public": true,
+      "filename": "tests/support.rs",
+      "start_line": 25,
+      "end_line": 28,
+      "container": "tests/support.rs",
+      "source_code": "/// Create a security context that allows access to specific tenants.\n///\n/// Uses a random subject ID for testing purposes.\npub fn ctx_allow_tenants(tenants: &[Uuid]) -> SecurityCtx {\n    let subject = Subject::new(Uuid::new_v4());\n    SecurityCtx::new(AccessScope::tenants_only(tenants.to_vec()), subject)\n}",
+      "details": {
+        "input_params": [
+          {
+            "name": "tenants",
+            "type": "&[Uuid]"
+          }
+        ],
+        "return_values": [
+          "SecurityCtx"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|fn::ctx_deny_all",
+      "type": "function",
+      "name": "ctx_deny_all",
+      "description": "Function ctx_deny_all",
+      "public": true,
+      "filename": "tests/support.rs",
+      "start_line": 49,
+      "end_line": 52,
+      "container": "tests/support.rs",
+      "source_code": "/// Create a deny-all security context.\n///\n/// This context will deny access to all data (empty scope).\npub fn ctx_deny_all() -> SecurityCtx {\n    let subject = Subject::new(Uuid::new_v4());\n    SecurityCtx::new(AccessScope::default(), subject)\n}",
+      "details": {
+        "input_params": [],
+        "return_values": [
+          "SecurityCtx"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|fn::ctx_root",
+      "type": "function",
+      "name": "ctx_root",
+      "description": "Function ctx_root",
+      "public": true,
+      "filename": "tests/support.rs",
+      "start_line": 57,
+      "end_line": 59,
+      "container": "tests/support.rs",
+      "source_code": "/// Create a root security context (system-level access).\n///\n/// This context bypasses all tenant filtering and allows access to all data.\npub fn ctx_root() -> SecurityCtx {\n    SecurityCtx::root_ctx()\n}",
+      "details": {
+        "input_params": [],
+        "return_values": [
+          "SecurityCtx"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|fn::ctx_with_subject_Uuid_ref_[Uuid]",
+      "type": "function",
+      "name": "ctx_with_subject",
+      "description": "Function ctx_with_subject",
+      "public": true,
+      "filename": "tests/support.rs",
+      "start_line": 41,
+      "end_line": 44,
+      "container": "tests/support.rs",
+      "source_code": "/// Create a security context with a specific subject ID and tenant access.\n///\n/// Useful when you need to test owner_id or subject-specific behavior.\npub fn ctx_with_subject(subject_id: Uuid, tenants: &[Uuid]) -> SecurityCtx {\n    let subject = Subject::new(subject_id);\n    SecurityCtx::new(AccessScope::tenants_only(tenants.to_vec()), subject)\n}",
+      "details": {
+        "input_params": [
+          {
+            "name": "subject_id",
+            "type": "Uuid"
+          },
+          {
+            "name": "tenants",
+            "type": "&[Uuid]"
+          }
+        ],
+        "return_values": [
+          "SecurityCtx"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|fn::delete_user_Authz_Extension<std::sync::Arc<Service>>_Path<Uuid>",
+      "type": "function",
+      "name": "delete_user",
+      "description": "Function delete_user",
+      "public": true,
+      "filename": "src/api/rest/handlers.rs",
+      "start_line": 181,
+      "end_line": 196,
+      "container": "src/api/rest/handlers.rs",
+      "source_code": "/// Delete a user by ID\n#[tracing::instrument(\n    name = \"users_info.delete_user\",\n    skip(svc, ctx),\n    fields(\n        user.id = %id,\n        request_id = Empty,\n        deleter.id = %ctx.subject_id()\n    )\n)]\npub async fn delete_user(\n    Authz(ctx): Authz,\n    Extension(svc): Extension<std::sync::Arc<Service>>,\n    Path(id): Path<Uuid>,\n) -> UsersResult<impl IntoResponse> {\n    info!(\n        user_id = %id,\n        deleter_id = %ctx.subject_id(),\n        \"Deleting user\"\n    );\n\n    svc.delete_user(&ctx, id)\n        .await\n        .map_err(UsersApiError::from_domain)?;\n    Ok(no_content())\n}",
+      "details": {
+        "input_params": [
+          {
+            "name": "arg",
+            "type": "Authz"
+          },
+          {
+            "name": "arg",
+            "type": "Extension<std::sync::Arc<Service>>"
+          },
+          {
+            "name": "arg",
+            "type": "Path<Uuid>"
+          }
+        ],
+        "return_values": [
+          "UsersResult<impl IntoResponse>"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|fn::domain_error_to_problem_DomainError_ref_str",
+      "type": "function",
+      "name": "domain_error_to_problem",
+      "description": "Function domain_error_to_problem",
+      "public": true,
+      "filename": "src/api/rest/error.rs",
+      "start_line": 7,
+      "end_line": 49,
+      "container": "src/api/rest/error.rs",
+      "source_code": "/// Map domain error to RFC9457 Problem using the catalog\npub fn domain_error_to_problem(e: DomainError, instance: &str) -> Problem {\n    // Extract trace ID from current tracing span if available\n    let trace_id = tracing::Span::current()\n        .id()\n        .map(|id| id.into_u64().to_string());\n\n    match &e {\n        DomainError::UserNotFound { id } => ErrorCode::example1_user_not_found_v1().with_context(\n            format!(\"User with id {} was not found\", id),\n            instance,\n            trace_id,\n        ),\n        DomainError::EmailAlreadyExists { email } => ErrorCode::example1_user_invalid_email_v1()\n            .with_context(\n                format!(\"Email '{}' is already in use\", email),\n                instance,\n                trace_id,\n            ),\n        DomainError::InvalidEmail { email } => ErrorCode::example1_user_invalid_email_v1()\n            .with_context(format!(\"Email '{}' is invalid\", email), instance, trace_id),\n        DomainError::EmptyDisplayName => ErrorCode::example1_user_validation_v1().with_context(\n            \"Display name cannot be empty\",\n            instance,\n            trace_id,\n        ),\n        DomainError::DisplayNameTooLong { .. } | DomainError::Validation { .. } => {\n            ErrorCode::example1_user_validation_v1().with_context(\n                format!(\"{}\", e),\n                instance,\n                trace_id,\n            )\n        }\n        DomainError::Database { .. } => {\n            // Log the internal error details but don't expose them to the client\n            tracing::error!(error = ?e, \"Database error occurred\");\n            ErrorCode::example1_user_internal_database_v1().with_context(\n                \"An internal database error occurred\",\n                instance,\n                trace_id,\n            )\n        }\n    }\n}",
+      "details": {
+        "input_params": [
+          {
+            "name": "e",
+            "type": "DomainError"
+          },
+          {
+            "name": "instance",
+            "type": "&str"
+          }
+        ],
+        "return_values": [
+          "Problem"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|fn::get_user_Authz_Extension<std::sync::Arc<Service>>_Path<Uuid>",
+      "type": "function",
+      "name": "get_user",
+      "description": "Function get_user",
+      "public": true,
+      "filename": "src/api/rest/handlers.rs",
+      "start_line": 58,
+      "end_line": 74,
+      "container": "src/api/rest/handlers.rs",
+      "source_code": "/// Get a specific user by ID\n#[tracing::instrument(\n    name = \"users_info.get_user\",\n    skip(svc, ctx),\n    fields(\n        user.id = %id,\n        request_id = Empty,\n        requester.id = %ctx.subject_id()\n    )\n)]\npub async fn get_user(\n    Authz(ctx): Authz,\n    Extension(svc): Extension<std::sync::Arc<Service>>,\n    Path(id): Path<Uuid>,\n) -> UsersResult<JsonBody<UserDto>> {\n    info!(\n        user_id = %id,\n        requester_id = %ctx.subject_id(),\n        \"Getting user details\"\n    );\n\n    let user = svc\n        .get_user(&ctx, id)\n        .await\n        .map_err(UsersApiError::from_domain)?;\n    Ok(Json(UserDto::from(user)))\n}",
+      "details": {
+        "input_params": [
+          {
+            "name": "arg",
+            "type": "Authz"
+          },
+          {
+            "name": "arg",
+            "type": "Extension<std::sync::Arc<Service>>"
+          },
+          {
+            "name": "arg",
+            "type": "Path<Uuid>"
+          }
+        ],
+        "return_values": [
+          "UsersResult<JsonBody<UserDto>>"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|fn::inmem_db",
+      "type": "function",
+      "name": "inmem_db",
+      "description": "Function inmem_db",
+      "public": true,
+      "filename": "tests/support.rs",
+      "start_line": 64,
+      "end_line": 74,
+      "container": "tests/support.rs",
+      "source_code": "/// Create a fresh in-memory SQLite database with migrations applied.\n///\n/// Each call creates a new isolated database for testing.\npub async fn inmem_db() -> DatabaseConnection {\n    let db = Database::connect(\"sqlite::memory:\")\n        .await\n        .expect(\"Failed to connect to in-memory database\");\n\n    users_info::infra::storage::migrations::Migrator::up(&db, None)\n        .await\n        .expect(\"Failed to run migrations\");\n\n    db\n}",
+      "details": {
+        "input_params": [],
+        "return_values": [
+          "DatabaseConnection"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|fn::inmem_secure_db",
+      "type": "function",
+      "name": "inmem_secure_db",
+      "description": "Function inmem_secure_db",
+      "public": true,
+      "filename": "tests/support.rs",
+      "start_line": 79,
+      "end_line": 81,
+      "container": "tests/support.rs",
+      "source_code": "/// Create a SecureConn wrapped around an in-memory database.\n///\n/// This is the primary interface for secure database operations in tests.\npub async fn inmem_secure_db() -> SecureConn {\n    SecureConn::new(inmem_db().await)\n}",
+      "details": {
+        "input_params": [],
+        "return_values": [
+          "SecureConn"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|fn::list_users_Authz_Extension<std::sync::Arc<Service>>_OData",
+      "type": "function",
+      "name": "list_users",
+      "description": "Function list_users",
+      "public": true,
+      "filename": "src/api/rest/handlers.rs",
+      "start_line": 31,
+      "end_line": 46,
+      "container": "src/api/rest/handlers.rs",
+      "source_code": "/// List users with cursor-based pagination\n#[tracing::instrument(\n    name = \"users_info.list_users\",\n    skip(svc, query, ctx),\n    fields(\n        limit = query.limit,\n        request_id = Empty,\n        user.id = %ctx.subject_id()\n    )\n)]\npub async fn list_users(\n    Authz(ctx): Authz,\n    Extension(svc): Extension<std::sync::Arc<Service>>,\n    OData(query): OData,\n) -> UsersResult<JsonPage<UserDto>> {\n    info!(\n        user_id = %ctx.subject_id(),\n        \"Listing users with cursor pagination\"\n    );\n\n    let page = svc\n        .list_users_page(&ctx, query)\n        .await?\n        .map_items(UserDto::from);\n    Ok(Json(page))\n}",
+      "details": {
+        "input_params": [
+          {
+            "name": "arg",
+            "type": "Authz"
+          },
+          {
+            "name": "arg",
+            "type": "Extension<std::sync::Arc<Service>>"
+          },
+          {
+            "name": "arg",
+            "type": "OData"
+          }
+        ],
+        "return_values": [
+          "UsersResult<JsonPage<UserDto>>"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|fn::register_routes_Router_ref_dynOpenApiRegistry_Arc<Service>",
+      "type": "function",
+      "name": "register_routes",
+      "description": "Function register_routes",
+      "public": true,
+      "filename": "src/api/rest/routes.rs",
+      "start_line": 10,
+      "end_line": 105,
+      "container": "src/api/rest/routes.rs",
+      "source_code": "pub fn register_routes(\n    mut router: Router,\n    openapi: &dyn OpenApiRegistry,\n    service: Arc<Service>,\n) -> anyhow::Result<Router> {\n    // Schemas should be auto-registered via ToSchema when used in operations\n\n    // GET /users - List users with cursor-based pagination\n    router = OperationBuilder::get(\"/users\")\n        .operation_id(\"users_info.list_users\")\n        .summary(\"List users with cursor pagination\")\n        .description(\"Retrieve a paginated list of users using cursor-based pagination\")\n        .tag(\"users\")\n        .require_auth(\"users\", \"read\")\n        .query_param_typed(\"limit\", false, \"Maximum number of users to return\", \"integer\")\n        .query_param(\"cursor\", false, \"Cursor for pagination\")\n        .handler(handlers::list_users)\n        .json_response_with_schema::<modkit_odata::Page<dto::UserDto>>(openapi, 200, \"Paginated list of users\")\n        .with_odata_filter_doc(\"OData v4 filter. Examples: `email eq 'test@example.com'`, `contains(email,'@acme.com')`\")\n        .query_param(\"$orderby\", false, \"OData orderby clause. Example: 'created_at desc, id desc'\")\n        .problem_response(openapi, 400, \"Bad Request\")\n        .problem_response(openapi, 500, \"Internal Server Error\")\n        .register(router, openapi);\n\n    // GET /users/{id} - Get a specific user\n    router = OperationBuilder::get(\"/users/{id}\")\n        .operation_id(\"users_info.get_user\")\n        .require_auth(\"users\", \"read\")\n        .summary(\"Get user by ID\")\n        .description(\"Retrieve a specific user by their UUID\")\n        .tag(\"users\")\n        .path_param(\"id\", \"User UUID\")\n        .handler(handlers::get_user)\n        .json_response_with_schema::<dto::UserDto>(openapi, 200, \"User found\")\n        .problem_response(openapi, 401, \"Unauthorized\")\n        .problem_response(openapi, 403, \"Forbidden\")\n        .problem_response(openapi, 404, \"Not Found\")\n        .problem_response(openapi, 500, \"Internal Server Error\")\n        .register(router, openapi);\n\n    // POST /users - Create a new user\n    router = OperationBuilder::post(\"/users\")\n        .operation_id(\"users_info.create_user\")\n        .require_auth(\"users\", \"create\")\n        .summary(\"Create a new user\")\n        .description(\"Create a new user with the provided information\")\n        .tag(\"users\")\n        .json_request::<dto::CreateUserReq>(openapi, \"User creation data\")\n        .handler(handlers::create_user)\n        .json_response_with_schema::<dto::UserDto>(openapi, 201, \"Created user\")\n        .problem_response(openapi, 400, \"Bad Request\")\n        .problem_response(openapi, 401, \"Unauthorized\")\n        .problem_response(openapi, 403, \"Forbidden\")\n        .problem_response(openapi, 409, \"Conflict\")\n        .problem_response(openapi, 500, \"Internal Server Error\")\n        .register(router, openapi);\n\n    // PUT /users/{id} - Update a user\n    router = OperationBuilder::put(\"/users/{id}\")\n        .operation_id(\"users_info.update_user\")\n        .require_auth(\"users\", \"update\")\n        .summary(\"Update user\")\n        .description(\"Update a user with partial data\")\n        .tag(\"users\")\n        .path_param(\"id\", \"User UUID\")\n        .json_request::<dto::UpdateUserReq>(openapi, \"User update data\")\n        .handler(handlers::update_user)\n        .json_response_with_schema::<dto::UserDto>(openapi, 200, \"Updated user\")\n        .problem_response(openapi, 400, \"Bad Request\")\n        .problem_response(openapi, 401, \"Unauthorized\")\n        .problem_response(openapi, 403, \"Forbidden\")\n        .problem_response(openapi, 404, \"Not Found\")\n        .problem_response(openapi, 409, \"Conflict\")\n        .problem_response(openapi, 500, \"Internal Server Error\")\n        .register(router, openapi);\n\n    // DELETE /users/{id} - Delete a user\n    router = OperationBuilder::delete(\"/users/{id}\")\n        .operation_id(\"users_info.delete_user\")\n        .require_auth(\"users\", \"delete\") // ← Explicit auth requirement\n        .summary(\"Delete user\")\n        .description(\"Delete a user by their UUID\")\n        .tag(\"users\")\n        .path_param(\"id\", \"User UUID\")\n        .handler(handlers::delete_user)\n        .json_response(204, \"User deleted successfully\")\n        .problem_response(openapi, 401, \"Unauthorized\")\n        .problem_response(openapi, 403, \"Forbidden\")\n        .problem_response(openapi, 404, \"Not Found\")\n        .problem_response(openapi, 500, \"Internal Server Error\")\n        .register(router, openapi);\n\n    router = router.layer(Extension(service.clone()));\n\n    Ok(router)\n}",
+      "details": {
+        "input_params": [
+          {
+            "name": "router",
+            "type": "Router"
+          },
+          {
+            "name": "openapi",
+            "type": "&dyn OpenApiRegistry"
+          },
+          {
+            "name": "service",
+            "type": "Arc<Service>"
+          }
+        ],
+        "return_values": [
+          "anyhow::Result<Router>"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|fn::register_users_sse_route_axum::Router<S>_ref_dynmodkit::api::OpenApiRegistry_modkit::SseBroadcaster<dto::UserEvent>",
+      "type": "function",
+      "name": "register_users_sse_route",
+      "description": "Function register_users_sse_route",
+      "public": true,
+      "filename": "src/api/rest/routes.rs",
+      "start_line": 108,
+      "end_line": 131,
+      "container": "src/api/rest/routes.rs",
+      "source_code": "/// Register SSE route for user events. The broadcaster is injected per-route via `Extension`.\npub fn register_users_sse_route<S>(\n    router: axum::Router<S>,\n    openapi: &dyn modkit::api::OpenApiRegistry,\n    sse: modkit::SseBroadcaster<dto::UserEvent>,\n) -> axum::Router<S>\nwhere\n    S: Clone + Send + Sync + 'static,\n{\n    // First register the route, then add layers\n    let router = OperationBuilder::get(\"/users/events\")\n        .operation_id(\"users_info.events\")\n        .require_auth(\"users\", \"read\") // ← Explicit auth requirement for event stream\n        .summary(\"User events stream (SSE)\")\n        .description(\"Real-time stream of user events as Server-Sent Events\")\n        .tag(\"users\")\n        .handler(handlers::users_events)\n        .sse_json::<dto::UserEvent>(openapi, \"SSE stream of UserEvent\")\n        .register(router, openapi);\n\n    // Apply layers to the specific route using Router::layer\n    router\n        .layer(axum::Extension(sse))\n        .layer(TimeoutLayer::new(Duration::from_secs(60 * 60)))\n}",
+      "details": {
+        "input_params": [
+          {
+            "name": "router",
+            "type": "axum::Router<S>"
+          },
+          {
+            "name": "openapi",
+            "type": "&dyn modkit::api::OpenApiRegistry"
+          },
+          {
+            "name": "sse",
+            "type": "modkit::SseBroadcaster<dto::UserEvent>"
+          }
+        ],
+        "return_values": [
+          "axum::Router<S>"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|fn::seed_user_ref_DatabaseConnection_Uuid_Uuid_ref_str_ref_str",
+      "type": "function",
+      "name": "seed_user",
+      "description": "Function seed_user",
+      "public": true,
+      "filename": "tests/support.rs",
+      "start_line": 95,
+      "end_line": 125,
+      "container": "tests/support.rs",
+      "source_code": "/// Seed a test user directly into the database (bypassing security for setup).\n///\n/// Returns the created user for use in tests.\n///\n/// # Note\n/// This uses the raw DatabaseConnection to bypass security for test setup.\n/// In production code, all inserts should go through SecureConn.\n///\n/// # Safety\n/// This function requires access to the raw DatabaseConnection for test seeding.\n/// Use `inmem_db()` to get the connection, then wrap it with `SecureConn::new()`\n/// after seeding is complete.\npub async fn seed_user(\n    db: &DatabaseConnection,\n    id: Uuid,\n    tenant_id: Uuid,\n    email: &str,\n    display_name: &str,\n) -> User {\n    use sea_orm::{ActiveModelTrait, Set};\n    use users_info::infra::storage::entity::ActiveModel;\n\n    let now = chrono::Utc::now();\n    let am = ActiveModel {\n        id: Set(id),\n        tenant_id: Set(tenant_id),\n        email: Set(email.to_string()),\n        display_name: Set(display_name.to_string()),\n        created_at: Set(now),\n        updated_at: Set(now),\n    };\n\n    let model = am.insert(db).await.expect(\"Failed to seed user\");\n\n    User {\n        id: model.id,\n        tenant_id: model.tenant_id,\n        email: model.email,\n        display_name: model.display_name,\n        created_at: model.created_at,\n        updated_at: model.updated_at,\n    }\n}",
+      "details": {
+        "input_params": [
+          {
+            "name": "db",
+            "type": "&DatabaseConnection"
+          },
+          {
+            "name": "id",
+            "type": "Uuid"
+          },
+          {
+            "name": "tenant_id",
+            "type": "Uuid"
+          },
+          {
+            "name": "email",
+            "type": "&str"
+          },
+          {
+            "name": "display_name",
+            "type": "&str"
+          }
+        ],
+        "return_values": [
+          "User"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|fn::setup_test_db_with_users_Vec<(Uuid,Uuid,ref_str,ref_str)>",
+      "type": "function",
+      "name": "setup_test_db_with_users",
+      "description": "Function setup_test_db_with_users",
+      "public": true,
+      "filename": "tests/support.rs",
+      "start_line": 132,
+      "end_line": 145,
+      "container": "tests/support.rs",
+      "source_code": "/// Create a test database, seed data, and return both the SecureConn and raw connection.\n///\n/// Use this when you need to seed data and then create a repository.\n/// The raw connection can be used for seeding (bypassing security), then wrap\n/// it with SecureConn for the repository.\npub async fn setup_test_db_with_users(\n    users: Vec<(Uuid, Uuid, &str, &str)>,\n) -> (DatabaseConnection, SecureConn) {\n    let db = inmem_db().await;\n\n    // Seed users using raw connection\n    for (id, tenant_id, email, display_name) in users {\n        seed_user(&db, id, tenant_id, email, display_name).await;\n    }\n\n    // Return both raw and secure connections\n    let sec = SecureConn::new(db.clone());\n    (db, sec)\n}",
+      "details": {
+        "input_params": [
+          {
+            "name": "users",
+            "type": "Vec<(Uuid, Uuid, &str, &str)>"
+          }
+        ],
+        "return_values": [
+          "(DatabaseConnection, SecureConn)"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|fn::update_user_Authz_Extension<std::sync::Arc<Service>>_Path<Uuid>_Json<UpdateUserReq>",
+      "type": "function",
+      "name": "update_user",
+      "description": "Function update_user",
+      "public": true,
+      "filename": "src/api/rest/handlers.rs",
+      "start_line": 151,
+      "end_line": 169,
+      "container": "src/api/rest/handlers.rs",
+      "source_code": "/// Update an existing user\n#[tracing::instrument(\n    name = \"users_info.update_user\",\n    skip(svc, req_body, ctx),\n    fields(\n        user.id = %id,\n        request_id = Empty,\n        updater.id = %ctx.subject_id()\n    )\n)]\npub async fn update_user(\n    Authz(ctx): Authz,\n    Extension(svc): Extension<std::sync::Arc<Service>>,\n    Path(id): Path<Uuid>,\n    Json(req_body): Json<UpdateUserReq>,\n) -> UsersResult<JsonBody<UserDto>> {\n    info!(\n        user_id = %id,\n        updater_id = %ctx.subject_id(),\n        \"Updating user\"\n    );\n\n    let patch = req_body.into();\n    let user = svc\n        .update_user(&ctx, id, patch)\n        .await\n        .map_err(UsersApiError::from_domain)?;\n    Ok(Json(UserDto::from(user)))\n}",
+      "details": {
+        "input_params": [
+          {
+            "name": "arg",
+            "type": "Authz"
+          },
+          {
+            "name": "arg",
+            "type": "Extension<std::sync::Arc<Service>>"
+          },
+          {
+            "name": "arg",
+            "type": "Path<Uuid>"
+          },
+          {
+            "name": "arg",
+            "type": "Json<UpdateUserReq>"
+          }
+        ],
+        "return_values": [
+          "UsersResult<JsonBody<UserDto>>"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|fn::users_events_Extension<SseBroadcaster<UserEvent>>",
+      "type": "function",
+      "name": "users_events",
+      "description": "Function users_events",
+      "public": true,
+      "filename": "src/api/rest/handlers.rs",
+      "start_line": 204,
+      "end_line": 209,
+      "container": "src/api/rest/handlers.rs",
+      "source_code": "/// SSE endpoint returning a live stream of `UserEvent`.\n#[tracing::instrument(\n    name = \"users_info.users_events\",\n    skip(sse),\n    fields(request_id = Empty)\n)]\npub async fn users_events(\n    Extension(sse): Extension<SseBroadcaster<UserEvent>>,\n) -> impl IntoResponse {\n    info!(\"New SSE connection for user events\");\n    sse.sse_response_named(\"users_events\")\n}",
+      "details": {
+        "input_params": [
+          {
+            "name": "arg",
+            "type": "Extension<SseBroadcaster<UserEvent>>"
+          }
+        ],
+        "return_values": [
+          "impl IntoResponse"
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|struct::CreateUserReq",
+      "type": "struct",
+      "name": "CreateUserReq",
+      "description": "Struct CreateUserReq",
+      "public": true,
+      "filename": "src/api/rest/dto.rs",
+      "start_line": 21,
+      "end_line": 28,
+      "container": "src/api/rest/dto.rs",
+      "source_code": "/// REST DTO for creating a new user\n#[derive(Debug, Clone, Serialize, Deserialize, ToSchema)]\npub struct CreateUserReq {\n    /// Optional ID for the user. If not provided, a UUID v7 will be generated\n    #[serde(skip_serializing_if = \"Option::is_none\")]\n    pub id: Option<Uuid>,\n    pub tenant_id: Uuid,\n    pub email: String,\n    pub display_name: String,\n}",
+      "details": {
+        "attributes": [
+          {
+            "name": "id",
+            "type": "Option<Uuid>"
+          },
+          {
+            "name": "tenant_id",
+            "type": "Uuid"
+          },
+          {
+            "name": "email",
+            "type": "String"
+          },
+          {
+            "name": "display_name",
+            "type": "String"
+          }
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|struct::Model",
+      "type": "struct",
+      "name": "Model",
+      "description": "Struct Model",
+      "public": true,
+      "filename": "src/infra/storage/entity.rs",
+      "start_line": 18,
+      "end_line": 26,
+      "container": "src/infra/storage/entity.rs",
+      "source_code": "/// User entity with multi-tenant isolation.\n///\n/// This entity demonstrates the use of the `#[derive(Scopable)]` macro\n/// for automatic implementation of secure ORM scoping.\n#[derive(Clone, Debug, PartialEq, DeriveEntityModel, Scopable)]\n#[sea_orm(table_name = \"users\")]\n#[secure(\n    tenant_col = \"tenant_id\",  // Multi-tenant entity - scope by tenant_id\n    resource_col = \"id\",        // Primary resource identifier\n    no_owner,                   // No owner-based filtering\n    no_type                     // No type-based filtering\n)]\npub struct Model {\n    #[sea_orm(primary_key, auto_increment = false)]\n    pub id: Uuid,\n    pub tenant_id: Uuid,\n    pub email: String,\n    pub display_name: String,\n    pub created_at: DateTime<Utc>,\n    pub updated_at: DateTime<Utc>,\n}",
+      "details": {
+        "attributes": [
+          {
+            "name": "id",
+            "type": "Uuid"
+          },
+          {
+            "name": "tenant_id",
+            "type": "Uuid"
+          },
+          {
+            "name": "email",
+            "type": "String"
+          },
+          {
+            "name": "display_name",
+            "type": "String"
+          },
+          {
+            "name": "created_at",
+            "type": "DateTime<Utc>"
+          },
+          {
+            "name": "updated_at",
+            "type": "DateTime<Utc>"
+          }
+        ]
+      }
+    },
+    {
+      "id": "crate::users_info|struct::UpdateUserReq",
+      "type": "struct",
+      "name": "UpdateUserReq",
+      "description": "Struct UpdateUserReq",
+      "public": true,
+      "filename": "src/api/rest/dto.rs",
+      "start_line": 32,
+      "end_line": 35,
+      "container": "src/api/rest/dto.rs",
+      "source_code": "/// REST DTO for updating a user (partial)\n#[derive(Debug, Clone, Serialize, Deserialize, ToSchema, Default)]\npub struct UpdateUserReq {\n    pub email: Option<String>,\n    pub display_name: Option<String>,\n}",
+      "details": {
+        "attributes": [
+          {
+            "name": "email",
+            "type": "Option<String>"
+          },
+          {
+            "name": "display_name",
+            "type": "Option<String>"
+          }
+        ]
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": "crate::users_info",
+      "to": "crate::users_info|fn::ctx_allow_tenants_ref_[Uuid]",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info",
+      "to": "crate::users_info|fn::ctx_allow_resources_ref_[Uuid]",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info",
+      "to": "crate::users_info|fn::ctx_with_subject_Uuid_ref_[Uuid]",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info",
+      "to": "crate::users_info|fn::ctx_deny_all",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info",
+      "to": "crate::users_info|fn::ctx_root",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info",
+      "to": "crate::users_info|fn::inmem_db",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info",
+      "to": "crate::users_info|fn::inmem_secure_db",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info",
+      "to": "crate::users_info|fn::seed_user_ref_DatabaseConnection_Uuid_Uuid_ref_str_ref_str",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info",
+      "to": "crate::users_info|fn::setup_test_db_with_users_Vec<(Uuid,Uuid,ref_str,ref_str)>",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info",
+      "to": "crate::users_info|class_struct::MockAuditPort",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::MockAuditPort",
+      "to": "crate::users_info|class_struct::MockAuditPort|method::get_user_access_Self_Uuid",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::MockAuditPort",
+      "to": "crate::users_info|class_struct::MockAuditPort|method::notify_user_created_Self",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info",
+      "to": "crate::users_info|class_struct::MockEventPublisher",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::MockEventPublisher",
+      "to": "crate::users_info|class_struct::MockEventPublisher|method::publish_Self_ref_UserDomainEvent",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info",
+      "to": "crate::users_info|enum::UsersInfoError",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfoError",
+      "to": "crate::users_info|class_struct::UsersInfoError|method::not_found_Uuid",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfoError",
+      "to": "crate::users_info|class_struct::UsersInfoError|method::conflict_String",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfoError",
+      "to": "crate::users_info|class_struct::UsersInfoError|method::validation_implInto<String>",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfoError",
+      "to": "crate::users_info|class_struct::UsersInfoError|method::internal",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfoError",
+      "to": "crate::users_info|class_struct::UsersInfoError|method::from_crate::domain::error::DomainError",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info",
+      "to": "crate::users_info|class_struct::User",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info",
+      "to": "crate::users_info|class_struct::NewUser",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info",
+      "to": "crate::users_info|class_struct::UserPatch",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info",
+      "to": "crate::users_info|class_struct::Migration",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::Migration",
+      "to": "crate::users_info|class_struct::Migration|method::up_Self_ref_SchemaManager",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::Migration",
+      "to": "crate::users_info|class_struct::Migration|method::down_Self_ref_SchemaManager",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info",
+      "to": "crate::users_info|class_struct::Migrator",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::Migrator",
+      "to": "crate::users_info|class_struct::Migrator|method::migrations",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::User",
+      "to": "crate::users_info|class_struct::User|method::from_UserEntity",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::User",
+      "to": "crate::users_info|class_struct::User|method::from_ref_UserEntity",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info",
+      "to": "crate::users_info|class_struct::SeaOrmUsersRepository",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::SeaOrmUsersRepository",
+      "to": "crate::users_info|class_struct::SeaOrmUsersRepository|method::new_SecureConn",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::SeaOrmUsersRepository",
+      "to": "crate::users_info|class_struct::SeaOrmUsersRepository|method::find_by_id_Self_ref_SecurityCtx_Uuid",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::SeaOrmUsersRepository",
+      "to": "crate::users_info|class_struct::SeaOrmUsersRepository|method::email_exists_Self_ref_SecurityCtx_ref_str",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::SeaOrmUsersRepository",
+      "to": "crate::users_info|class_struct::SeaOrmUsersRepository|method::insert_Self_ref_SecurityCtx_User",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::SeaOrmUsersRepository",
+      "to": "crate::users_info|class_struct::SeaOrmUsersRepository|method::update_Self_ref_SecurityCtx_User",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::SeaOrmUsersRepository",
+      "to": "crate::users_info|class_struct::SeaOrmUsersRepository|method::delete_Self_ref_SecurityCtx_Uuid",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::SeaOrmUsersRepository",
+      "to": "crate::users_info|class_struct::SeaOrmUsersRepository|method::list_users_page_Self_ref_SecurityCtx_ref_ODataQuery",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info",
+      "to": "crate::users_info|struct::Model",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info",
+      "to": "crate::users_info|enum::Relation",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info",
+      "to": "crate::users_info|class_struct::HttpAuditClient",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::HttpAuditClient",
+      "to": "crate::users_info|class_struct::HttpAuditClient|method::new_TracedClient_Url_Url",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::HttpAuditClient",
+      "to": "crate::users_info|class_struct::HttpAuditClient|method::get_user_access_Self_Uuid",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::HttpAuditClient",
+      "to": "crate::users_info|class_struct::HttpAuditClient|method::notify_user_created_Self",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info",
+      "to": "crate::users_info|class_struct::UsersInfoConfig",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfoConfig",
+      "to": "crate::users_info|class_struct::UsersInfoConfig|method::default",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info",
+      "to": "crate::users_info|class_struct::UsersInfo",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfo",
+      "to": "crate::users_info|class_struct::UsersInfo|method::default",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfo",
+      "to": "crate::users_info|class_struct::UsersInfo|method::clone_Self",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfo",
+      "to": "crate::users_info|class_struct::UsersInfo|method::init_Self_ref_ModuleCtx",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfo",
+      "to": "crate::users_info|class_struct::UsersInfo|method::as_any_Self",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfo",
+      "to": "crate::users_info|class_struct::UsersInfo|method::migrate_Self_ref_modkit_db::DbHandle",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfo",
+      "to": "crate::users_info|class_struct::UsersInfo|method::register_rest_Self_ref_ModuleCtx_axum::Router_ref_dynOpenApiRegistry",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info",
+      "to": "crate::users_info|class_struct::UsersInfoLocalClient",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfoLocalClient",
+      "to": "crate::users_info|class_struct::UsersInfoLocalClient|method::get_user_Self_Uuid",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfoLocalClient",
+      "to": "crate::users_info|class_struct::UsersInfoLocalClient|method::list_users_Self_ODataQuery",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfoLocalClient",
+      "to": "crate::users_info|class_struct::UsersInfoLocalClient|method::create_user_Self_NewUser",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfoLocalClient",
+      "to": "crate::users_info|class_struct::UsersInfoLocalClient|method::update_user_Self_Uuid_UserPatch",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfoLocalClient",
+      "to": "crate::users_info|class_struct::UsersInfoLocalClient|method::delete_user_Self_Uuid",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info",
+      "to": "crate::users_info|fn::list_users_Authz_Extension<std::sync::Arc<Service>>_OData",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info",
+      "to": "crate::users_info|fn::get_user_Authz_Extension<std::sync::Arc<Service>>_Path<Uuid>",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info",
+      "to": "crate::users_info|fn::create_user_Authz_Extension<std::sync::Arc<Service>>_Json<CreateUserReq>",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info",
+      "to": "crate::users_info|fn::update_user_Authz_Extension<std::sync::Arc<Service>>_Path<Uuid>_Json<UpdateUserReq>",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info",
+      "to": "crate::users_info|fn::delete_user_Authz_Extension<std::sync::Arc<Service>>_Path<Uuid>",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info",
+      "to": "crate::users_info|fn::users_events_Extension<SseBroadcaster<UserEvent>>",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info",
+      "to": "crate::users_info|fn::domain_error_to_problem_DomainError_ref_str",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::Problem",
+      "to": "crate::users_info|class_struct::Problem|method::from_DomainError",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info",
+      "to": "crate::users_info|class_struct::SseUserEventPublisher",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::SseUserEventPublisher",
+      "to": "crate::users_info|class_struct::SseUserEventPublisher|method::new_SseBroadcaster<UserEvent>",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::SseUserEventPublisher",
+      "to": "crate::users_info|class_struct::SseUserEventPublisher|method::publish_Self_ref_UserDomainEvent",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info",
+      "to": "crate::users_info|fn::register_routes_Router_ref_dynOpenApiRegistry_Arc<Service>",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info",
+      "to": "crate::users_info|fn::register_users_sse_route_axum::Router<S>_ref_dynmodkit::api::OpenApiRegistry_modkit::SseBroadcaster<dto::UserEvent>",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info",
+      "to": "crate::users_info|class_struct::UserDto",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info",
+      "to": "crate::users_info|struct::CreateUserReq",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info",
+      "to": "crate::users_info|struct::UpdateUserReq",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::UserDto",
+      "to": "crate::users_info|class_struct::UserDto|method::from_User",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::NewUser",
+      "to": "crate::users_info|class_struct::NewUser|method::from_CreateUserReq",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::UserPatch",
+      "to": "crate::users_info|class_struct::UserPatch|method::from_UpdateUserReq",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info",
+      "to": "crate::users_info|class_struct::UserEvent",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::UserEvent",
+      "to": "crate::users_info|class_struct::UserEvent|method::from_ref_crate::domain::events::UserDomainEvent",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info",
+      "to": "crate::users_info|enum::UserDomainEvent",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info",
+      "to": "crate::users_info|enum::DomainError",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::DomainError",
+      "to": "crate::users_info|class_struct::DomainError|method::user_not_found_Uuid",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::DomainError",
+      "to": "crate::users_info|class_struct::DomainError|method::email_already_exists_String",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::DomainError",
+      "to": "crate::users_info|class_struct::DomainError|method::invalid_email_String",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::DomainError",
+      "to": "crate::users_info|class_struct::DomainError|method::empty_display_name",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::DomainError",
+      "to": "crate::users_info|class_struct::DomainError|method::display_name_too_long_usize_usize",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::DomainError",
+      "to": "crate::users_info|class_struct::DomainError|method::database_implInto<String>",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::DomainError",
+      "to": "crate::users_info|class_struct::DomainError|method::validation_implInto<String>_implInto<String>",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info",
+      "to": "crate::users_info|class_struct::Service",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info",
+      "to": "crate::users_info|class_struct::ServiceConfig",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::ServiceConfig",
+      "to": "crate::users_info|class_struct::ServiceConfig|method::default",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::Service",
+      "to": "crate::users_info|class_struct::Service|method::new_Arc<dynUsersRepository>_Arc<dynEventPublisher<UserDomainEvent>>_Arc<dynAuditPort>_ServiceConfig",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::Service",
+      "to": "crate::users_info|class_struct::Service|method::get_user_Self_ref_SecurityCtx_Uuid",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::Service",
+      "to": "crate::users_info|class_struct::Service|method::list_users_page_Self_ref_SecurityCtx_ODataQuery",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::Service",
+      "to": "crate::users_info|class_struct::Service|method::create_user_Self_ref_SecurityCtx_NewUser",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::Service",
+      "to": "crate::users_info|class_struct::Service|method::update_user_Self_ref_SecurityCtx_Uuid_UserPatch",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|class_struct::Service",
+      "to": "crate::users_info|class_struct::Service|method::delete_user_Self_ref_SecurityCtx_Uuid",
+      "type": "includes"
+    },
+    {
+      "from": "crate::users_info|fn::inmem_db",
+      "to": "crate::users_info|class_struct::Migrator",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|fn::inmem_secure_db",
+      "to": "crate::users_info|fn::inmem_db",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|fn::seed_user_ref_DatabaseConnection_Uuid_Uuid_ref_str_ref_str",
+      "to": "crate::users_info|class_struct::SeaOrmUsersRepository|method::insert_Self_ref_SecurityCtx_User",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|fn::setup_test_db_with_users_Vec<(Uuid,Uuid,ref_str,ref_str)>",
+      "to": "crate::users_info|fn::inmem_db",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|fn::setup_test_db_with_users_Vec<(Uuid,Uuid,ref_str,ref_str)>",
+      "to": "crate::users_info|class_struct::UsersInfo|method::clone_Self",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::User|method::from_ref_UserEntity",
+      "to": "crate::users_info|class_struct::UsersInfo|method::clone_Self",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::HttpAuditClient|method::get_user_access_Self_Uuid",
+      "to": "crate::users_info|class_struct::UsersInfo|method::clone_Self",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::HttpAuditClient|method::get_user_access_Self_Uuid",
+      "to": "crate::users_info|class_struct::DomainError|method::validation_implInto<String>_implInto<String>",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::HttpAuditClient|method::get_user_access_Self_Uuid",
+      "to": "crate::users_info|enum::DomainError",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|class_struct::HttpAuditClient|method::notify_user_created_Self",
+      "to": "crate::users_info|class_struct::UsersInfo|method::clone_Self",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::HttpAuditClient|method::notify_user_created_Self",
+      "to": "crate::users_info|class_struct::DomainError|method::validation_implInto<String>_implInto<String>",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::HttpAuditClient|method::notify_user_created_Self",
+      "to": "crate::users_info|enum::DomainError",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfo|method::clone_Self",
+      "to": "crate::users_info|class_struct::UsersInfo|method::clone_Self",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfo|method::init_Self_ref_ModuleCtx",
+      "to": "crate::users_info|class_struct::SeaOrmUsersRepository|method::new_SecureConn",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfo|method::init_Self_ref_ModuleCtx",
+      "to": "crate::users_info|class_struct::SeaOrmUsersRepository",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfo|method::init_Self_ref_ModuleCtx",
+      "to": "crate::users_info|class_struct::SseUserEventPublisher|method::new_SseBroadcaster<UserEvent>",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfo|method::init_Self_ref_ModuleCtx",
+      "to": "crate::users_info|class_struct::SseUserEventPublisher",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfo|method::init_Self_ref_ModuleCtx",
+      "to": "crate::users_info|class_struct::UsersInfo|method::clone_Self",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfo|method::init_Self_ref_ModuleCtx",
+      "to": "crate::users_info|class_struct::HttpAuditClient|method::new_TracedClient_Url_Url",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfo|method::init_Self_ref_ModuleCtx",
+      "to": "crate::users_info|class_struct::HttpAuditClient",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfo|method::init_Self_ref_ModuleCtx",
+      "to": "crate::users_info|class_struct::Service|method::new_Arc<dynUsersRepository>_Arc<dynEventPublisher<UserDomainEvent>>_Arc<dynAuditPort>_ServiceConfig",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfo|method::init_Self_ref_ModuleCtx",
+      "to": "crate::users_info|class_struct::Service",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfo|method::init_Self_ref_ModuleCtx",
+      "to": "crate::users_info|class_struct::UsersInfoLocalClient",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfo|method::migrate_Self_ref_modkit_db::DbHandle",
+      "to": "crate::users_info|class_struct::Migrator",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfo|method::register_rest_Self_ref_ModuleCtx_axum::Router_ref_dynOpenApiRegistry",
+      "to": "crate::users_info|class_struct::UsersInfo|method::clone_Self",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfo|method::register_rest_Self_ref_ModuleCtx_axum::Router_ref_dynOpenApiRegistry",
+      "to": "crate::users_info|fn::register_routes_Router_ref_dynOpenApiRegistry_Arc<Service>",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfo|method::register_rest_Self_ref_ModuleCtx_axum::Router_ref_dynOpenApiRegistry",
+      "to": "crate::users_info|fn::register_users_sse_route_axum::Router<S>_ref_dynmodkit::api::OpenApiRegistry_modkit::SseBroadcaster<dto::UserEvent>",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfoLocalClient|method::get_user_Self_Uuid",
+      "to": "crate::users_info|class_struct::Service|method::get_user_Self_ref_SecurityCtx_Uuid",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfoLocalClient|method::get_user_Self_Uuid",
+      "to": "crate::users_info|class_struct::UsersInfoLocalClient|method::get_user_Self_Uuid",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfoLocalClient|method::list_users_Self_ODataQuery",
+      "to": "crate::users_info|class_struct::SeaOrmUsersRepository|method::list_users_page_Self_ref_SecurityCtx_ref_ODataQuery",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfoLocalClient|method::list_users_Self_ODataQuery",
+      "to": "crate::users_info|class_struct::Service|method::list_users_page_Self_ref_SecurityCtx_ODataQuery",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfoLocalClient|method::list_users_Self_ODataQuery",
+      "to": "crate::users_info|class_struct::UsersInfoError|method::internal",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfoLocalClient|method::list_users_Self_ODataQuery",
+      "to": "crate::users_info|enum::UsersInfoError",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfoLocalClient|method::create_user_Self_NewUser",
+      "to": "crate::users_info|class_struct::Service|method::create_user_Self_ref_SecurityCtx_NewUser",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfoLocalClient|method::create_user_Self_NewUser",
+      "to": "crate::users_info|class_struct::UsersInfoLocalClient|method::create_user_Self_NewUser",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfoLocalClient|method::update_user_Self_Uuid_UserPatch",
+      "to": "crate::users_info|class_struct::Service|method::update_user_Self_ref_SecurityCtx_Uuid_UserPatch",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfoLocalClient|method::update_user_Self_Uuid_UserPatch",
+      "to": "crate::users_info|class_struct::UsersInfoLocalClient|method::update_user_Self_Uuid_UserPatch",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfoLocalClient|method::delete_user_Self_Uuid",
+      "to": "crate::users_info|class_struct::Service|method::delete_user_Self_ref_SecurityCtx_Uuid",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfoLocalClient|method::delete_user_Self_Uuid",
+      "to": "crate::users_info|class_struct::UsersInfoLocalClient|method::delete_user_Self_Uuid",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|fn::list_users_Authz_Extension<std::sync::Arc<Service>>_OData",
+      "to": "crate::users_info|class_struct::SeaOrmUsersRepository|method::list_users_page_Self_ref_SecurityCtx_ref_ODataQuery",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|fn::list_users_Authz_Extension<std::sync::Arc<Service>>_OData",
+      "to": "crate::users_info|class_struct::Service|method::list_users_page_Self_ref_SecurityCtx_ODataQuery",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|fn::list_users_Authz_Extension<std::sync::Arc<Service>>_OData",
+      "to": "crate::users_info|class_struct::UserDto|method::from_User",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|fn::list_users_Authz_Extension<std::sync::Arc<Service>>_OData",
+      "to": "crate::users_info|class_struct::UserDto",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|fn::get_user_Authz_Extension<std::sync::Arc<Service>>_Path<Uuid>",
+      "to": "crate::users_info|class_struct::Service|method::get_user_Self_ref_SecurityCtx_Uuid",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|fn::get_user_Authz_Extension<std::sync::Arc<Service>>_Path<Uuid>",
+      "to": "crate::users_info|class_struct::UsersInfoLocalClient|method::get_user_Self_Uuid",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|fn::get_user_Authz_Extension<std::sync::Arc<Service>>_Path<Uuid>",
+      "to": "crate::users_info|class_struct::UserDto|method::from_User",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|fn::get_user_Authz_Extension<std::sync::Arc<Service>>_Path<Uuid>",
+      "to": "crate::users_info|class_struct::UserDto",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|fn::create_user_Authz_Extension<std::sync::Arc<Service>>_Json<CreateUserReq>",
+      "to": "crate::users_info|class_struct::DomainError|method::validation_implInto<String>_implInto<String>",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|fn::create_user_Authz_Extension<std::sync::Arc<Service>>_Json<CreateUserReq>",
+      "to": "crate::users_info|enum::DomainError",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|fn::create_user_Authz_Extension<std::sync::Arc<Service>>_Json<CreateUserReq>",
+      "to": "crate::users_info|class_struct::Service|method::create_user_Self_ref_SecurityCtx_NewUser",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|fn::create_user_Authz_Extension<std::sync::Arc<Service>>_Json<CreateUserReq>",
+      "to": "crate::users_info|class_struct::UsersInfoLocalClient|method::create_user_Self_NewUser",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|fn::create_user_Authz_Extension<std::sync::Arc<Service>>_Json<CreateUserReq>",
+      "to": "crate::users_info|class_struct::UserDto|method::from_User",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|fn::create_user_Authz_Extension<std::sync::Arc<Service>>_Json<CreateUserReq>",
+      "to": "crate::users_info|class_struct::UserDto",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|fn::update_user_Authz_Extension<std::sync::Arc<Service>>_Path<Uuid>_Json<UpdateUserReq>",
+      "to": "crate::users_info|class_struct::Service|method::update_user_Self_ref_SecurityCtx_Uuid_UserPatch",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|fn::update_user_Authz_Extension<std::sync::Arc<Service>>_Path<Uuid>_Json<UpdateUserReq>",
+      "to": "crate::users_info|class_struct::UsersInfoLocalClient|method::update_user_Self_Uuid_UserPatch",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|fn::update_user_Authz_Extension<std::sync::Arc<Service>>_Path<Uuid>_Json<UpdateUserReq>",
+      "to": "crate::users_info|class_struct::UserDto|method::from_User",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|fn::update_user_Authz_Extension<std::sync::Arc<Service>>_Path<Uuid>_Json<UpdateUserReq>",
+      "to": "crate::users_info|class_struct::UserDto",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|fn::delete_user_Authz_Extension<std::sync::Arc<Service>>_Path<Uuid>",
+      "to": "crate::users_info|class_struct::Service|method::delete_user_Self_ref_SecurityCtx_Uuid",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|fn::delete_user_Authz_Extension<std::sync::Arc<Service>>_Path<Uuid>",
+      "to": "crate::users_info|class_struct::UsersInfoLocalClient|method::delete_user_Self_Uuid",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|fn::domain_error_to_problem_DomainError_ref_str",
+      "to": "crate::users_info|enum::DomainError",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|class_struct::SseUserEventPublisher|method::publish_Self_ref_UserDomainEvent",
+      "to": "crate::users_info|class_struct::UserEvent|method::from_ref_crate::domain::events::UserDomainEvent",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::SseUserEventPublisher|method::publish_Self_ref_UserDomainEvent",
+      "to": "crate::users_info|class_struct::UserEvent",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|fn::register_routes_Router_ref_dynOpenApiRegistry_Arc<Service>",
+      "to": "crate::users_info|fn::list_users_Authz_Extension<std::sync::Arc<Service>>_OData",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|fn::register_routes_Router_ref_dynOpenApiRegistry_Arc<Service>",
+      "to": "crate::users_info|fn::get_user_Authz_Extension<std::sync::Arc<Service>>_Path<Uuid>",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|fn::register_routes_Router_ref_dynOpenApiRegistry_Arc<Service>",
+      "to": "crate::users_info|fn::create_user_Authz_Extension<std::sync::Arc<Service>>_Json<CreateUserReq>",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|fn::register_routes_Router_ref_dynOpenApiRegistry_Arc<Service>",
+      "to": "crate::users_info|fn::update_user_Authz_Extension<std::sync::Arc<Service>>_Path<Uuid>_Json<UpdateUserReq>",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|fn::register_routes_Router_ref_dynOpenApiRegistry_Arc<Service>",
+      "to": "crate::users_info|fn::delete_user_Authz_Extension<std::sync::Arc<Service>>_Path<Uuid>",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|fn::register_routes_Router_ref_dynOpenApiRegistry_Arc<Service>",
+      "to": "crate::users_info|class_struct::UsersInfo|method::clone_Self",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|fn::register_users_sse_route_axum::Router<S>_ref_dynmodkit::api::OpenApiRegistry_modkit::SseBroadcaster<dto::UserEvent>",
+      "to": "crate::users_info|fn::users_events_Extension<SseBroadcaster<UserEvent>>",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::Service|method::get_user_Self_ref_SecurityCtx_Uuid",
+      "to": "crate::users_info|class_struct::HttpAuditClient|method::get_user_access_Self_Uuid",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::Service|method::get_user_Self_ref_SecurityCtx_Uuid",
+      "to": "crate::users_info|class_struct::MockAuditPort|method::get_user_access_Self_Uuid",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::Service|method::get_user_Self_ref_SecurityCtx_Uuid",
+      "to": "crate::users_info|class_struct::SeaOrmUsersRepository|method::find_by_id_Self_ref_SecurityCtx_Uuid",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::Service|method::get_user_Self_ref_SecurityCtx_Uuid",
+      "to": "crate::users_info|class_struct::DomainError|method::database_implInto<String>",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::Service|method::get_user_Self_ref_SecurityCtx_Uuid",
+      "to": "crate::users_info|enum::DomainError",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|class_struct::Service|method::get_user_Self_ref_SecurityCtx_Uuid",
+      "to": "crate::users_info|class_struct::DomainError|method::user_not_found_Uuid",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::Service|method::list_users_page_Self_ref_SecurityCtx_ODataQuery",
+      "to": "crate::users_info|class_struct::SeaOrmUsersRepository|method::list_users_page_Self_ref_SecurityCtx_ref_ODataQuery",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::Service|method::list_users_page_Self_ref_SecurityCtx_ODataQuery",
+      "to": "crate::users_info|class_struct::Service|method::list_users_page_Self_ref_SecurityCtx_ODataQuery",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::Service|method::create_user_Self_ref_SecurityCtx_NewUser",
+      "to": "crate::users_info|class_struct::SeaOrmUsersRepository|method::find_by_id_Self_ref_SecurityCtx_Uuid",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::Service|method::create_user_Self_ref_SecurityCtx_NewUser",
+      "to": "crate::users_info|class_struct::DomainError|method::database_implInto<String>",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::Service|method::create_user_Self_ref_SecurityCtx_NewUser",
+      "to": "crate::users_info|enum::DomainError",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|class_struct::Service|method::create_user_Self_ref_SecurityCtx_NewUser",
+      "to": "crate::users_info|class_struct::DomainError|method::validation_implInto<String>_implInto<String>",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::Service|method::create_user_Self_ref_SecurityCtx_NewUser",
+      "to": "crate::users_info|class_struct::SeaOrmUsersRepository|method::email_exists_Self_ref_SecurityCtx_ref_str",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::Service|method::create_user_Self_ref_SecurityCtx_NewUser",
+      "to": "crate::users_info|class_struct::DomainError|method::email_already_exists_String",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::Service|method::create_user_Self_ref_SecurityCtx_NewUser",
+      "to": "crate::users_info|class_struct::SeaOrmUsersRepository|method::insert_Self_ref_SecurityCtx_User",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::Service|method::create_user_Self_ref_SecurityCtx_NewUser",
+      "to": "crate::users_info|class_struct::UsersInfo|method::clone_Self",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::Service|method::create_user_Self_ref_SecurityCtx_NewUser",
+      "to": "crate::users_info|class_struct::HttpAuditClient|method::notify_user_created_Self",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::Service|method::create_user_Self_ref_SecurityCtx_NewUser",
+      "to": "crate::users_info|class_struct::MockAuditPort|method::notify_user_created_Self",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::Service|method::create_user_Self_ref_SecurityCtx_NewUser",
+      "to": "crate::users_info|class_struct::MockEventPublisher|method::publish_Self_ref_UserDomainEvent",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::Service|method::create_user_Self_ref_SecurityCtx_NewUser",
+      "to": "crate::users_info|class_struct::SseUserEventPublisher|method::publish_Self_ref_UserDomainEvent",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::Service|method::update_user_Self_ref_SecurityCtx_Uuid_UserPatch",
+      "to": "crate::users_info|class_struct::SeaOrmUsersRepository|method::find_by_id_Self_ref_SecurityCtx_Uuid",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::Service|method::update_user_Self_ref_SecurityCtx_Uuid_UserPatch",
+      "to": "crate::users_info|class_struct::DomainError|method::database_implInto<String>",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::Service|method::update_user_Self_ref_SecurityCtx_Uuid_UserPatch",
+      "to": "crate::users_info|enum::DomainError",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|class_struct::Service|method::update_user_Self_ref_SecurityCtx_Uuid_UserPatch",
+      "to": "crate::users_info|class_struct::DomainError|method::user_not_found_Uuid",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::Service|method::update_user_Self_ref_SecurityCtx_Uuid_UserPatch",
+      "to": "crate::users_info|class_struct::SeaOrmUsersRepository|method::email_exists_Self_ref_SecurityCtx_ref_str",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::Service|method::update_user_Self_ref_SecurityCtx_Uuid_UserPatch",
+      "to": "crate::users_info|class_struct::DomainError|method::email_already_exists_String",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::Service|method::update_user_Self_ref_SecurityCtx_Uuid_UserPatch",
+      "to": "crate::users_info|class_struct::UsersInfo|method::clone_Self",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::Service|method::update_user_Self_ref_SecurityCtx_Uuid_UserPatch",
+      "to": "crate::users_info|class_struct::SeaOrmUsersRepository|method::update_Self_ref_SecurityCtx_User",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::Service|method::update_user_Self_ref_SecurityCtx_Uuid_UserPatch",
+      "to": "crate::users_info|class_struct::MockEventPublisher|method::publish_Self_ref_UserDomainEvent",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::Service|method::update_user_Self_ref_SecurityCtx_Uuid_UserPatch",
+      "to": "crate::users_info|class_struct::SseUserEventPublisher|method::publish_Self_ref_UserDomainEvent",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::Service|method::delete_user_Self_ref_SecurityCtx_Uuid",
+      "to": "crate::users_info|class_struct::SeaOrmUsersRepository|method::delete_Self_ref_SecurityCtx_Uuid",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::Service|method::delete_user_Self_ref_SecurityCtx_Uuid",
+      "to": "crate::users_info|class_struct::DomainError|method::database_implInto<String>",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::Service|method::delete_user_Self_ref_SecurityCtx_Uuid",
+      "to": "crate::users_info|enum::DomainError",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|class_struct::Service|method::delete_user_Self_ref_SecurityCtx_Uuid",
+      "to": "crate::users_info|class_struct::DomainError|method::user_not_found_Uuid",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::Service|method::delete_user_Self_ref_SecurityCtx_Uuid",
+      "to": "crate::users_info|class_struct::MockEventPublisher|method::publish_Self_ref_UserDomainEvent",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::Service|method::delete_user_Self_ref_SecurityCtx_Uuid",
+      "to": "crate::users_info|class_struct::SseUserEventPublisher|method::publish_Self_ref_UserDomainEvent",
+      "type": "calls"
+    },
+    {
+      "from": "crate::users_info|class_struct::MockAuditPort|method::get_user_access_Self_Uuid",
+      "to": "crate::users_info|enum::DomainError",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|class_struct::MockAuditPort|method::notify_user_created_Self",
+      "to": "crate::users_info|enum::DomainError",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|class_struct::MockEventPublisher|method::publish_Self_ref_UserDomainEvent",
+      "to": "crate::users_info|enum::UserDomainEvent",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|class_struct::NewUser|method::from_CreateUserReq",
+      "to": "crate::users_info|struct::CreateUserReq",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|class_struct::Problem|method::from_DomainError",
+      "to": "crate::users_info|enum::DomainError",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|class_struct::SeaOrmUsersRepository|method::find_by_id_Self_ref_SecurityCtx_Uuid",
+      "to": "crate::users_info|class_struct::User",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|class_struct::SeaOrmUsersRepository|method::insert_Self_ref_SecurityCtx_User",
+      "to": "crate::users_info|class_struct::User",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|class_struct::SeaOrmUsersRepository|method::list_users_page_Self_ref_SecurityCtx_ref_ODataQuery",
+      "to": "crate::users_info|class_struct::User",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|class_struct::SeaOrmUsersRepository|method::update_Self_ref_SecurityCtx_User",
+      "to": "crate::users_info|class_struct::User",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|class_struct::Service|method::create_user_Self_ref_SecurityCtx_NewUser",
+      "to": "crate::users_info|class_struct::NewUser",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|class_struct::Service|method::create_user_Self_ref_SecurityCtx_NewUser",
+      "to": "crate::users_info|class_struct::User",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|class_struct::Service|method::get_user_Self_ref_SecurityCtx_Uuid",
+      "to": "crate::users_info|class_struct::User",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|class_struct::Service|method::list_users_page_Self_ref_SecurityCtx_ODataQuery",
+      "to": "crate::users_info|class_struct::User",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|class_struct::Service|method::new_Arc<dynUsersRepository>_Arc<dynEventPublisher<UserDomainEvent>>_Arc<dynAuditPort>_ServiceConfig",
+      "to": "crate::users_info|enum::UserDomainEvent",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|class_struct::Service|method::new_Arc<dynUsersRepository>_Arc<dynEventPublisher<UserDomainEvent>>_Arc<dynAuditPort>_ServiceConfig",
+      "to": "crate::users_info|class_struct::ServiceConfig",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|class_struct::Service|method::update_user_Self_ref_SecurityCtx_Uuid_UserPatch",
+      "to": "crate::users_info|class_struct::UserPatch",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|class_struct::Service|method::update_user_Self_ref_SecurityCtx_Uuid_UserPatch",
+      "to": "crate::users_info|class_struct::User",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|class_struct::SseUserEventPublisher|method::new_SseBroadcaster<UserEvent>",
+      "to": "crate::users_info|class_struct::UserEvent",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|class_struct::SseUserEventPublisher|method::publish_Self_ref_UserDomainEvent",
+      "to": "crate::users_info|enum::UserDomainEvent",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|class_struct::UserDto|method::from_User",
+      "to": "crate::users_info|class_struct::User",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|class_struct::UserEvent|method::from_ref_crate::domain::events::UserDomainEvent",
+      "to": "crate::users_info|enum::UserDomainEvent",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|class_struct::UserPatch|method::from_UpdateUserReq",
+      "to": "crate::users_info|struct::UpdateUserReq",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfoError|method::from_crate::domain::error::DomainError",
+      "to": "crate::users_info|enum::DomainError",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfoLocalClient|method::create_user_Self_NewUser",
+      "to": "crate::users_info|class_struct::NewUser",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfoLocalClient|method::create_user_Self_NewUser",
+      "to": "crate::users_info|class_struct::User",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfoLocalClient|method::create_user_Self_NewUser",
+      "to": "crate::users_info|enum::UsersInfoError",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfoLocalClient|method::delete_user_Self_Uuid",
+      "to": "crate::users_info|enum::UsersInfoError",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfoLocalClient|method::get_user_Self_Uuid",
+      "to": "crate::users_info|class_struct::User",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfoLocalClient|method::get_user_Self_Uuid",
+      "to": "crate::users_info|enum::UsersInfoError",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfoLocalClient|method::list_users_Self_ODataQuery",
+      "to": "crate::users_info|class_struct::User",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfoLocalClient|method::update_user_Self_Uuid_UserPatch",
+      "to": "crate::users_info|class_struct::UserPatch",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfoLocalClient|method::update_user_Self_Uuid_UserPatch",
+      "to": "crate::users_info|class_struct::User",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|class_struct::UsersInfoLocalClient|method::update_user_Self_Uuid_UserPatch",
+      "to": "crate::users_info|enum::UsersInfoError",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|class_struct::User|method::from_UserEntity",
+      "to": "crate::users_info|struct::Model",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|class_struct::User|method::from_ref_UserEntity",
+      "to": "crate::users_info|struct::Model",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|fn::create_user_Authz_Extension<std::sync::Arc<Service>>_Json<CreateUserReq>",
+      "to": "crate::users_info|class_struct::Service",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|fn::create_user_Authz_Extension<std::sync::Arc<Service>>_Json<CreateUserReq>",
+      "to": "crate::users_info|struct::CreateUserReq",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|fn::delete_user_Authz_Extension<std::sync::Arc<Service>>_Path<Uuid>",
+      "to": "crate::users_info|class_struct::Service",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|fn::get_user_Authz_Extension<std::sync::Arc<Service>>_Path<Uuid>",
+      "to": "crate::users_info|class_struct::Service",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|fn::list_users_Authz_Extension<std::sync::Arc<Service>>_OData",
+      "to": "crate::users_info|class_struct::Service",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|fn::register_routes_Router_ref_dynOpenApiRegistry_Arc<Service>",
+      "to": "crate::users_info|class_struct::Service",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|fn::register_users_sse_route_axum::Router<S>_ref_dynmodkit::api::OpenApiRegistry_modkit::SseBroadcaster<dto::UserEvent>",
+      "to": "crate::users_info|class_struct::UserEvent",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|fn::seed_user_ref_DatabaseConnection_Uuid_Uuid_ref_str_ref_str",
+      "to": "crate::users_info|class_struct::User",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|fn::update_user_Authz_Extension<std::sync::Arc<Service>>_Path<Uuid>_Json<UpdateUserReq>",
+      "to": "crate::users_info|class_struct::Service",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|fn::update_user_Authz_Extension<std::sync::Arc<Service>>_Path<Uuid>_Json<UpdateUserReq>",
+      "to": "crate::users_info|struct::UpdateUserReq",
+      "type": "reference"
+    },
+    {
+      "from": "crate::users_info|fn::users_events_Extension<SseBroadcaster<UserEvent>>",
+      "to": "crate::users_info|class_struct::UserEvent",
+      "type": "reference"
+    }
+  ]
+}
